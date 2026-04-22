@@ -1,7 +1,9 @@
 /* ═════════════ V1 — SOBRE ÉDITORIAL — page styles ═════════════ */
 
 /* Topbar */
-.topbar { background: var(--navy-deep); color: var(--cream); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; padding: 10px 0; }
+.topbar { background: var(--cream-soft); color: var(--navy); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.topbar-item { color: var(--navy); }
+.topbar a.topbar-item:hover { color: var(--brick); }
 .topbar-inner { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
 .topbar-item { display: inline-flex; align-items: center; gap: 8px; opacity: 0.9; }
 .topbar-item svg { width: 14px; height: 14px; }
@@ -11,7 +13,7 @@
 .nav.scrolled { background: rgba(250,246,236,0.96); backdrop-filter: blur(14px); box-shadow: 0 2px 20px rgba(44,62,84,0.06); }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 86px; }
 .nav-logo { display: flex; align-items: center; gap: 14px; }
-.nav-logo img { height: 64px; width: auto; max-width: 220px; object-fit: contain; display: block; }
+.nav-logo img { height: 88px; width: auto; max-width: 280px; object-fit: contain; display: block; }
 .nav-menu { display: flex; align-items: center; gap: 36px; }
 .nav-link { font-family: var(--font-body); font-weight: 600; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--navy); position: relative; transition: color 0.2s; }
 .nav-link::after { content: ''; position: absolute; left: 0; bottom: -6px; width: 0; height: 2px; background: var(--brick); transition: width 0.3s ease; }
@@ -321,6 +323,6 @@ footer.bso-footer { background: var(--ink); color: rgba(255,255,255,0.7); paddin
   .topbar-inner { font-size: 11px; gap: 12px; justify-content: center; }
   .topbar-item { font-size: 11px; }
   .nav-inner { height: 70px; }
-  .nav-logo img { height: 52px; max-width: 180px; }
+  .nav-logo img { height: 64px; max-width: 200px; }
   .s-head { margin-bottom: 60px; }
 }
