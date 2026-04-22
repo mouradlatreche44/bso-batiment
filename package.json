@@ -1,0 +1,8 @@
+{
+  "name": "depannage60-multipage",
+  "version": "1.0.0",
+  "description": "Site multipage Dépannage 60 — Plomberie, Électricité, Chauffage Oise",
+  "scripts": {
+    "build": "node build.js"
+  }
+}
