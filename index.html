@@ -13,7 +13,19 @@
 <meta property="og:locale" content="fr_FR" />
 <meta property="og:title" content="BSO Bâtiment — Maçonnerie · ITE · Rénovation · Vaucluse" />
 <meta property="og:description" content="Artisan bâtisseur dans le Vaucluse depuis 2018. Maçonnerie, ITE, rénovation. RGE Qualibat. Devis 48h." />
+<meta property="og:url" content="https://bso-batiment.fr/" />
+<meta property="og:image" content="https://bso-batiment.fr/assets/img/logo-bso.png" />
+<meta property="og:image:alt" content="Logo BSO Bâtiment — artisan maçon Vaucluse" />
+<meta property="og:site_name" content="BSO Bâtiment" />
 <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="BSO Bâtiment — Maçonnerie · ITE · Rénovation · Vaucluse" />
+<meta name="twitter:description" content="Artisan RGE Qualibat dans le Vaucluse. Devis gratuit 48h." />
+<meta name="twitter:image" content="https://bso-batiment.fr/assets/img/logo-bso.png" />
+<meta name="author" content="BSO Bâtiment" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#2C3E54" />
+<link rel="alternate" hreflang="fr-FR" href="https://bso-batiment.fr/" />
+<link rel="alternate" hreflang="x-default" href="https://bso-batiment.fr/" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -23,18 +35,80 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "GeneralContractor",
-  "name": "BSO Bâtiment",
-  "image": "https://bso-batiment.fr/assets/img/logo-bso.png",
-  "url": "https://bso-batiment.fr/",
-  "telephone": "+33773292452",
-  "email": "bso.construction@gmx.com",
-  "priceRange": "€€",
-  "address": {"@type": "PostalAddress", "addressRegion": "Vaucluse (84)", "addressCountry": "FR"},
-  "areaServed": ["Avignon","Carpentras","Orange","Cavaillon","L'Isle-sur-la-Sorgue","Pertuis","Apt","Sorgues","Le Pontet","Vedène","Monteux","Bollène","Vaison-la-Romaine"],
-  "founder": "BSO", "foundingDate": "2018",
-  "hasCredential": ["RGE Qualibat","Garantie Décennale"],
-  "openingHours": "Mo-Fr 08:00-18:00"
+  "@graph": [
+    {
+      "@type": ["GeneralContractor","LocalBusiness"],
+      "@id": "https://bso-batiment.fr/#org",
+      "name": "BSO Bâtiment",
+      "alternateName": "BSO Construction",
+      "description": "Artisan bâtisseur dans le Vaucluse depuis 2018 : maçonnerie générale, isolation thermique extérieure (ITE) et rénovation complète. Certifié RGE Qualibat, garantie décennale.",
+      "image": "https://bso-batiment.fr/assets/img/logo-bso.png",
+      "logo": "https://bso-batiment.fr/assets/img/logo-bso.png",
+      "url": "https://bso-batiment.fr/",
+      "telephone": "+33773292452",
+      "email": "bso.construction@gmx.com",
+      "priceRange": "€€",
+      "currenciesAccepted": "EUR",
+      "paymentAccepted": "Cash, Bank transfer, Cheque",
+      "address": {"@type": "PostalAddress", "addressLocality": "Avignon", "postalCode": "84000", "addressRegion": "Vaucluse", "addressCountry": "FR"},
+      "geo": {"@type": "GeoCoordinates", "latitude": 43.9493, "longitude": 4.8055},
+      "areaServed": [
+        {"@type": "City", "name": "Avignon"},
+        {"@type": "City", "name": "Carpentras"},
+        {"@type": "City", "name": "Orange"},
+        {"@type": "City", "name": "Cavaillon"},
+        {"@type": "City", "name": "L'Isle-sur-la-Sorgue"},
+        {"@type": "City", "name": "Pertuis"},
+        {"@type": "City", "name": "Apt"},
+        {"@type": "City", "name": "Sorgues"},
+        {"@type": "City", "name": "Le Pontet"},
+        {"@type": "City", "name": "Vedène"},
+        {"@type": "City", "name": "Monteux"},
+        {"@type": "City", "name": "Bollène"},
+        {"@type": "City", "name": "Vaison-la-Romaine"},
+        {"@type": "AdministrativeArea", "name": "Vaucluse (84)"}
+      ],
+      "founder": {"@type": "Person", "name": "BSO"},
+      "foundingDate": "2018",
+      "hasCredential": [
+        {"@type": "EducationalOccupationalCredential", "name": "RGE Qualibat", "credentialCategory": "certification"},
+        {"@type": "EducationalOccupationalCredential", "name": "Garantie Décennale", "credentialCategory": "insurance"}
+      ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00"}
+      ],
+      "knowsLanguage": "fr",
+      "slogan": "Le bâti, notre métier de cœur",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Prestations BSO Bâtiment",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Maçonnerie générale", "url": "https://bso-batiment.fr/maconnerie.html", "areaServed": "Vaucluse"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Isolation thermique extérieure (ITE)", "url": "https://bso-batiment.fr/isolation-thermique.html", "areaServed": "Vaucluse"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Rénovation complète", "url": "https://bso-batiment.fr/renovation.html", "areaServed": "Vaucluse"}}
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bso-batiment.fr/#site",
+      "url": "https://bso-batiment.fr/",
+      "name": "BSO Bâtiment",
+      "inLanguage": "fr-FR",
+      "publisher": {"@id": "https://bso-batiment.fr/#org"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Combien de temps pour recevoir un devis ?", "acceptedAnswer": {"@type": "Answer", "text": "Après la visite technique sur votre chantier, nous vous remettons un devis détaillé sous 48 heures ouvrées. Le devis est gratuit, chiffré ligne par ligne et sans engagement."}},
+        {"@type": "Question", "name": "Êtes-vous éligibles à MaPrimeRénov' et aux aides de l'État ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. BSO Bâtiment est certifié RGE Qualibat, ce qui vous ouvre droit à MaPrimeRénov', aux CEE et à l'éco-PTZ pour vos travaux d'isolation thermique extérieure. Nous montons le dossier d'aides avec vous."}},
+        {"@type": "Question", "name": "Quelle est votre zone d'intervention ?", "acceptedAnswer": {"@type": "Answer", "text": "Nous intervenons dans l'ensemble du Vaucluse (84) : Avignon, Carpentras, Orange, Cavaillon, L'Isle-sur-Sorgue, Pertuis, Apt, Sorgues, Le Pontet, Vedène, Monteux, Bollène, Vaison-la-Romaine, Mazan, Châteauneuf-de-Gadagne et communes alentour."}},
+        {"@type": "Question", "name": "Garantie décennale : qu'est-ce que cela couvre ?", "acceptedAnswer": {"@type": "Answer", "text": "La garantie décennale couvre pendant 10 ans tous les dommages compromettant la solidité de l'ouvrage ou le rendant impropre à sa destination : fissures structurelles, défauts d'étanchéité, problèmes d'isolation. Toutes nos réalisations y sont soumises."}},
+        {"@type": "Question", "name": "Quels matériaux utilisez-vous pour l'ITE ?", "acceptedAnswer": {"@type": "Answer", "text": "Nous travaillons avec Weber, Knauf, Sto, Parexlanko et Rockwool — fabricants certifiés à la pérennité reconnue. Selon votre projet et votre budget, nous proposons du polystyrène expansé, de la laine de roche haute performance ou des isolants biosourcés."}},
+        {"@type": "Question", "name": "Proposez-vous des paiements échelonnés ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, selon la taille du chantier, nous établissons un échéancier en 3 à 5 versements : acompte à la signature, appels de fonds aux étapes clés du chantier, solde à la réception. Nous acceptons aussi les financements via l'éco-PTZ pour les travaux d'isolation."}}
+      ]
+    }
+  ]
 }
 </script>
 </head>
