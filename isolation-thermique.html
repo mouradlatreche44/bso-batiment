@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mentions légales — BSO Bâtiment</title>
-  <meta name="description" content="Mentions légales et informations réglementaires du site BSO Bâtiment : éditeur, hébergement, propriété intellectuelle, RGPD, cookies." />
+  <title>Isolation Thermique Extérieure (ITE) — BSO Bâtiment · Vaucluse</title>
+  <meta name="description" content="ITE dans le Vaucluse (84) : pose isolation thermique extérieure Weber, Knauf, Sto. Finition enduit ou bardage. Certifié RGE Qualibat — éligible MaPrimeRénov' et CEE." />
+  <meta name="keywords" content="ITE Vaucluse, isolation thermique extérieure Avignon, RGE Qualibat, MaPrimeRénov, ravalement isolant, bardage, enduit isolant" />
   <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="Mentions légales — BSO Bâtiment" />
-  <meta property="og:description" content="Informations légales et réglementaires du site BSO Bâtiment." />
+  <meta property="og:title" content="Isolation Thermique Extérieure — BSO Bâtiment" />
+  <meta property="og:description" content="ITE certifiée RGE dans le Vaucluse. Réduisez vos factures jusqu'à 30 %. Aides MaPrimeRénov' et CEE." />
   <meta property="og:type" content="website" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Kanit:wght@400;600;700;800&display=swap" rel="stylesheet" />
 
-  <!-- Lucide icons (premium icon set) -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -65,7 +65,6 @@
     h1, h2, h3, h4, h5 { font-family: 'Outfit', sans-serif; letter-spacing: -0.02em; }
     ::selection { background: #d97706; color: white; }
 
-    /* ── Navbar ── */
     #navbar { transition: all 0.35s cubic-bezier(0.4,0,0.2,1); }
     #navbar.scrolled { background: rgba(255,255,255,0.98); backdrop-filter: blur(14px); box-shadow: 0 1px 20px rgba(0,0,0,0.06); }
     .nav-link { position: relative; font-family: 'Outfit', sans-serif; font-weight: 700; color: #1e293b; transition: color 0.2s ease; font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; }
@@ -73,11 +72,9 @@
     .nav-link:hover { color: #d97706; }
     .nav-link:hover::after { width: 100%; }
 
-    /* ── Section label ── */
     .section-label { display: inline-flex; align-items: center; gap: 8px; color: #d97706; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 16px; }
     .section-label::before { content:''; display:inline-block; width: 24px; height: 1px; background: #d97706; }
 
-    /* ── Buttons ── */
     .btn-primary { display:inline-flex; align-items:center; justify-content:center; gap: 8px; background:#d97706; color:white; padding: 13px 28px; border-radius: 999px; font-weight:600; font-size:14px; letter-spacing: 0.04em; text-transform: uppercase; transition: all 0.25s cubic-bezier(0.4,0,0.2,1); box-shadow: 0 6px 20px -6px rgba(217,119,6,0.5); }
     .btn-primary:hover { background:#b45309; transform: translateY(-1px); box-shadow: 0 10px 28px -6px rgba(217,119,6,0.6); }
     .btn-outline-light { display:inline-flex; align-items:center; justify-content:center; gap: 8px; background:transparent; color:white; padding: 12px 28px; border-radius: 999px; font-weight:600; font-size:14px; letter-spacing: 0.04em; text-transform: uppercase; border: 1.5px solid rgba(255,255,255,0.4); transition: all 0.25s ease; }
@@ -85,7 +82,6 @@
     .btn-ghost { display:inline-flex; align-items:center; gap: 8px; color:#d97706; font-weight:600; font-size:13px; letter-spacing: 0.1em; text-transform: uppercase; transition: gap 0.25s ease; }
     .btn-ghost:hover { gap: 14px; }
 
-    /* ── Scroll animations ── */
     .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1); }
     .reveal.visible { opacity: 1; transform: translateY(0); }
     .reveal-left { opacity: 0; transform: translateX(-40px); transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1); }
@@ -97,50 +93,45 @@
     .stagger-3 { transition-delay: .24s; }
     .stagger-4 { transition-delay: .32s; }
 
-    /* ── Floating CTA ── */
+    .service-card { background:white; border-radius: 16px; overflow:hidden; transition: all 0.4s cubic-bezier(0.23,1,0.32,1); border: 1px solid #f1f5f9; padding: 32px; }
+    .service-card:hover { transform: translateY(-6px); box-shadow: 0 30px 60px -20px rgba(15,23,42,0.18); border-color: #fde68a; }
+
+    .process-card { background:white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 28px 24px; transition: all 0.3s ease; position: relative; }
+    .process-card:hover { border-color: #d97706; box-shadow: 0 20px 40px -20px rgba(217,119,6,0.25); transform: translateY(-4px); }
+    .process-badge { position:absolute; top:-14px; right: 20px; background:#d97706; color:white; font-family:'Outfit',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.1em; padding: 4px 10px; border-radius: 4px; }
+
     .float-cta { animation: pulseRing 2.4s ease-in-out infinite; }
     @keyframes pulseRing {
       0%, 100% { box-shadow: 0 6px 24px rgba(217,119,6,0.45), 0 0 0 0 rgba(217,119,6,0.45); }
       50% { box-shadow: 0 6px 24px rgba(217,119,6,0.55), 0 0 0 12px rgba(217,119,6,0); }
     }
 
-    /* ── Dropdown ── */
     .dropdown:hover .dropdown-menu { opacity: 1; transform: translateY(0); pointer-events: auto; }
     .dropdown-menu { opacity: 0; transform: translateY(8px); pointer-events: none; transition: all 0.2s ease; }
     .dropdown::after { content: ''; position: absolute; left: 0; right: 0; top: 100%; height: 18px; }
 
-    /* ── Scrollbar ── */
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: #f1f5f9; }
     ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
     ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
 
-    /* ── Topbar ── */
+    .hero-overlay { background: linear-gradient(180deg, rgba(15,23,42,0.55) 0%, rgba(15,23,42,0.75) 100%); }
     .topbar { background: #0f172a; color: #cbd5e1; font-size: 12px; letter-spacing: 0.08em; }
-
-    /* ── TOC ── */
-    .toc-link { display: block; padding: 8px 12px; border-left: 2px solid #e2e8f0; color: #475569; font-size: 13px; font-weight: 500; transition: all 0.2s ease; }
-    .toc-link:hover { border-left-color: #d97706; color: #d97706; background: #fffbeb; }
   </style>
 </head>
 <body>
 
-<!-- ═══════════════════════════════════════════════════════════
-     TOPBAR
-════════════════════════════════════════════════════════════ -->
+<!-- TOPBAR -->
 <div class="topbar hidden md:block">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center h-9 text-center">
     <span class="uppercase tracking-widest text-xs">artisans du bâtiment 24h/24 · 7j/7 dans le Vaucluse (84)</span>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════════════════════════
-     NAVBAR
-════════════════════════════════════════════════════════════ -->
+<!-- NAVBAR -->
 <nav id="navbar" class="sticky top-0 left-0 right-0 z-50 bg-white border-b border-ink-100">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-20">
-      <!-- Logo -->
       <a href="index.html" class="flex items-center gap-3 flex-shrink-0">
         <svg viewBox="0 0 100 100" class="h-10 w-auto flex-shrink-0" xmlns="http://www.w3.org/2000/svg" aria-label="BSO Bâtiment">
           <!-- 3 wedges : navy + orange terre -->
@@ -157,7 +148,6 @@
         <span class="font-kanit font-bold text-xl sm:text-2xl text-blue-950 tracking-tight">BSO <span class="text-brand-600">Bâtiment</span></span>
       </a>
 
-      <!-- Desktop nav -->
       <div class="hidden lg:flex items-center gap-10">
         <div class="relative dropdown">
           <button class="nav-link flex items-center gap-1.5">
@@ -180,14 +170,12 @@
         <a href="contact.html" class="nav-link">Contact</a>
       </div>
 
-      <!-- Right CTA -->
       <div class="flex items-center gap-3">
         <a href="tel:0773292452" class="hidden sm:inline-flex btn-primary">
           <i data-lucide="phone" class="w-4 h-4"></i>
           07 73 29 24 52
         </a>
 
-        <!-- Mobile burger -->
         <button id="burger-btn" class="lg:hidden p-2 rounded-lg text-ink-800" aria-label="Menu">
           <i id="burger-icon" data-lucide="menu" class="w-7 h-7"></i>
           <i id="close-icon" data-lucide="x" class="w-7 h-7 hidden"></i>
@@ -196,7 +184,6 @@
     </div>
   </div>
 
-  <!-- Mobile menu -->
   <div id="mobile-menu" class="hidden lg:hidden border-t border-ink-100">
     <div class="px-4 py-4 space-y-1">
       <a href="index.html" class="block px-4 py-3 rounded-lg text-ink-700 hover:bg-ink-50 font-medium text-sm">Accueil</a>
@@ -206,7 +193,7 @@
       </button>
       <div id="mobile-services-menu" class="hidden pl-4 space-y-1">
         <a href="maconnerie.html" class="flex items-center gap-2 px-4 py-2.5 rounded-lg text-ink-700 hover:bg-brand-50 text-xs font-bold uppercase tracking-wider"><i data-lucide="droplets" class="w-4 h-4 text-brand-600"></i> Plomberie</a>
-        <a href="isolation-thermique.html" class="flex items-center gap-2 px-4 py-2.5 rounded-lg text-ink-700 hover:bg-brand-50 text-xs font-bold uppercase tracking-wider"><i data-lucide="zap" class="w-4 h-4 text-brand-600"></i> Électricité</a>
+        <a href="isolation-thermique.html" class="flex items-center gap-2 px-4 py-2.5 rounded-lg text-brand-600 font-semibold bg-brand-50 text-sm"><i data-lucide="zap" class="w-4 h-4 text-brand-600"></i> Électricité</a>
         <a href="renovation.html" class="flex items-center gap-2 px-4 py-2.5 rounded-lg text-ink-700 hover:bg-brand-50 text-xs font-bold uppercase tracking-wider"><i data-lucide="flame" class="w-4 h-4 text-brand-600"></i> Chauffage</a>
       </div>
       <a href="a-propos.html" class="block px-4 py-3 rounded-lg text-ink-700 hover:bg-ink-50 font-medium text-sm">À propos</a>
@@ -218,177 +205,273 @@
   </div>
 </nav>
 
-<!-- ═══════════════════════════════════════════════════════════
-     HERO — Small dark band
-════════════════════════════════════════════════════════════ -->
-<section class="relative min-h-[30vh] flex items-center justify-center overflow-hidden bg-ink-900">
-  <div class="absolute inset-0 opacity-40">
-    <div class="absolute inset-0" style="background: radial-gradient(circle at 20% 30%, rgba(217,119,6,0.25), transparent 50%), radial-gradient(circle at 80% 70%, rgba(217,119,6,0.15), transparent 50%);"></div>
+<!-- HERO -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="assets/img/electricite-outils-complet.jpg" alt="Outils et tableau électrique — BSO Bâtiment" class="w-full h-full object-cover" />
+    <div class="absolute inset-0 hero-overlay"></div>
   </div>
-  <div class="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-    <nav class="text-xs text-white/60 tracking-widest uppercase mb-5 reveal">
-      <a href="index.html" class="hover:text-brand-400 transition-colors">Accueil</a>
-      <span class="mx-2 text-white/30">/</span>
-      <span class="text-brand-400">Mentions légales</span>
-    </nav>
-    <h1 class="font-heading font-bold text-white text-4xl sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight mb-4 reveal stagger-1">
-      Mentions <span class="text-brand-500">légales</span>
+
+  <div class="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+    <div class="inline-flex items-center gap-2 text-brand-300 text-xs font-semibold tracking-[0.2em] uppercase mb-4 reveal">
+      <span class="w-6 h-px bg-brand-300"></span>
+      Isolation thermique extérieure
+    </div>
+    <h1 class="font-heading font-bold text-white text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] tracking-tight mb-6 reveal stagger-1">
+      Isoler par l'extérieur,<br />
+      <span class="text-brand-500">économiser durablement</span>
     </h1>
-    <p class="text-white/70 text-base sm:text-lg max-w-2xl mx-auto reveal stagger-2">
-      Informations légales et réglementaires
+    <p class="text-white/80 text-lg sm:text-xl font-light mb-10 reveal stagger-2">
+      ITE certifiée RGE Qualibat — éligible MaPrimeRénov' & CEE
     </p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 reveal stagger-3">
+      <a href="tel:0773292452" class="btn-primary">
+        <i data-lucide="phone" class="w-4 h-4"></i>
+        07 73 29 24 52
+      </a>
+      <a href="contact.html" class="btn-outline-light">
+        Demander un devis
+      </a>
+    </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════
-     CONTENU
-════════════════════════════════════════════════════════════ -->
-<section class="py-16 lg:py-24 bg-white">
+<!-- INTRO 2-COL -->
+<section class="py-20 lg:py-28 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 lg:grid-cols-4 gap-10 lg:gap-14">
-
-      <!-- TOC -->
-      <aside class="lg:col-span-1">
-        <div class="lg:sticky lg:top-28 reveal-left">
-          <div class="section-label"><span></span>Sommaire</div>
-          <nav class="space-y-1">
-            <a href="#editeur" class="toc-link">1. Éditeur du site</a>
-            <a href="#hebergement" class="toc-link">2. Hébergement</a>
-            <a href="#propriete" class="toc-link">3. Propriété intellectuelle</a>
-            <a href="#donnees" class="toc-link">4. Données personnelles (RGPD)</a>
-            <a href="#cookies" class="toc-link">5. Cookies</a>
-            <a href="#responsabilite" class="toc-link">6. Responsabilité</a>
-            <a href="#droit" class="toc-link">7. Droit applicable</a>
-          </nav>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div class="reveal-left">
+        <div class="relative rounded-2xl overflow-hidden aspect-[4/5] max-w-md mx-auto lg:mx-0 shadow-2xl">
+          <img src="assets/img/tableau-electrique.jpeg" alt="Tableau électrique conforme" class="w-full h-full object-cover" />
         </div>
-      </aside>
+      </div>
 
-      <!-- Content -->
-      <div class="lg:col-span-3 max-w-4xl space-y-10">
+      <div class="reveal-right">
+        <div class="section-label"><span></span>Notre expertise</div>
+        <h2 class="font-heading font-bold text-ink-900 text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
+          Une enveloppe isolante,<br />
+          <span class="text-brand-600">performante</span> & durable
+        </h2>
+        <p class="text-ink-500 text-base leading-relaxed mb-8">
+          L'isolation thermique extérieure (ITE) enveloppe votre maison d'un manteau isolant continu, supprimant les ponts thermiques et préservant l'inertie de vos murs. Résultat : jusqu'à 30 % d'économies sur votre facture de chauffage, un meilleur confort d'été dans le Vaucluse, et une façade rénovée. Nos chantiers sont réalisés sous certification RGE Qualibat — donc éligibles aux aides MaPrimeRénov' et CEE.
+        </p>
 
-        <article id="editeur" class="reveal">
-          <div class="section-label"><span></span>Section 01</div>
-          <h2 class="font-heading font-bold text-ink-900 text-2xl sm:text-3xl mb-5">Éditeur du site</h2>
-          <p class="text-ink-600 leading-relaxed mb-4">
-            Le présent site est édité par BSO Bâtiment, entreprise artisanale spécialisée dans le dépannage bâtiment & rénovation (électricité, chauffage, plomberie).
-          </p>
-          <ul class="list-disc list-inside marker:text-brand-600 space-y-2 text-ink-600 leading-relaxed">
-            <li><strong class="text-ink-800">Nom commercial :</strong> BSO Bâtiment</li>
-            <li><strong class="text-ink-800">Forme juridique :</strong> Entreprise individuelle (EI)</li>
-            <li><strong class="text-ink-800">Adresse du siège :</strong> Longueil-Sainte-Marie, 60126 — Oise (Hauts-de-France)</li>
-            <li><strong class="text-ink-800">SIRET :</strong> 000 000 000 00000 (à compléter)</li>
-            <li><strong class="text-ink-800">Email :</strong> <a href="mailto:contact@bsobatiment.fr" class="text-brand-600 hover:underline">contact@bsobatiment.fr</a></li>
-            <li><strong class="text-ink-800">Téléphone :</strong> <a href="tel:0773292452" class="text-brand-600 hover:underline">07 73 29 24 52</a></li>
-            <li><strong class="text-ink-800">Directeur de publication :</strong> Le gérant de BSO Bâtiment</li>
-          </ul>
-        </article>
-
-        <article id="hebergement" class="reveal">
-          <div class="section-label"><span></span>Section 02</div>
-          <h2 class="font-heading font-bold text-ink-900 text-2xl sm:text-3xl mb-5">Hébergement</h2>
-          <p class="text-ink-600 leading-relaxed mb-4">
-            Le site est hébergé par la société Hostinger, acteur international de l'hébergement web.
-          </p>
-          <ul class="list-disc list-inside marker:text-brand-600 space-y-2 text-ink-600 leading-relaxed">
-            <li><strong class="text-ink-800">Hébergeur :</strong> Hostinger International Ltd.</li>
-            <li><strong class="text-ink-800">Adresse :</strong> 61 Lordou Vironos Street, 6023 Larnaca, Chypre</li>
-            <li><strong class="text-ink-800">Site web :</strong> <a href="https://www.hostinger.fr" target="_blank" rel="noopener" class="text-brand-600 hover:underline">www.hostinger.fr</a></li>
-          </ul>
-        </article>
-
-        <article id="propriete" class="reveal">
-          <div class="section-label"><span></span>Section 03</div>
-          <h2 class="font-heading font-bold text-ink-900 text-2xl sm:text-3xl mb-5">Propriété intellectuelle</h2>
-          <p class="text-ink-600 leading-relaxed mb-4">
-            L'ensemble des éléments présents sur ce site (textes, images, photographies, logos, icônes, vidéos, graphismes, mise en page, code source) est la propriété exclusive de BSO Bâtiment ou de ses partenaires, et est protégé par les lois françaises et internationales relatives à la propriété intellectuelle.
-          </p>
-          <p class="text-ink-600 leading-relaxed mb-4">
-            Toute reproduction, représentation, modification, publication, adaptation ou exploitation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est strictement interdite sans l'autorisation écrite préalable de BSO Bâtiment.
-          </p>
-          <p class="text-ink-600 leading-relaxed">
-            Toute utilisation non autorisée du site ou de l'un quelconque des éléments qu'il contient sera considérée comme constitutive d'une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de la propriété intellectuelle.
-          </p>
-        </article>
-
-        <article id="donnees" class="reveal">
-          <div class="section-label"><span></span>Section 04</div>
-          <h2 class="font-heading font-bold text-ink-900 text-2xl sm:text-3xl mb-5">Protection des données personnelles (RGPD)</h2>
-          <p class="text-ink-600 leading-relaxed mb-4">
-            Conformément au Règlement Général sur la Protection des Données (RGPD 2016/679) et à la loi Informatique et Libertés modifiée, BSO Bâtiment s'engage à protéger les données personnelles de ses utilisateurs.
-          </p>
-          <ul class="list-disc list-inside marker:text-brand-600 space-y-2 text-ink-600 leading-relaxed mb-4">
-            <li><strong class="text-ink-800">Collecte :</strong> les données sont collectées via le formulaire de contact (nom, prénom, email, téléphone, ville, message).</li>
-            <li><strong class="text-ink-800">Finalité :</strong> gestion des demandes de devis, réponse aux sollicitations, suivi des interventions.</li>
-            <li><strong class="text-ink-800">Base légale :</strong> consentement explicite de l'utilisateur lors de la soumission du formulaire.</li>
-            <li><strong class="text-ink-800">Durée de conservation :</strong> 3 ans à compter du dernier contact.</li>
-            <li><strong class="text-ink-800">Destinataires :</strong> uniquement BSO Bâtiment et ses éventuels sous-traitants techniques.</li>
-          </ul>
-          <p class="text-ink-600 leading-relaxed mb-4">
-            Vous disposez d'un droit d'accès, de rectification, de suppression, de limitation, de portabilité et d'opposition concernant vos données. Vous pouvez également définir des directives relatives au sort de vos données après votre décès.
-          </p>
-          <p class="text-ink-600 leading-relaxed">
-            Pour exercer ces droits, contactez-nous par email à <a href="mailto:contact@bsobatiment.fr" class="text-brand-600 hover:underline">contact@bsobatiment.fr</a>. En cas de litige, vous pouvez introduire une réclamation auprès de la CNIL (<a href="https://www.cnil.fr" target="_blank" rel="noopener" class="text-brand-600 hover:underline">www.cnil.fr</a>).
-          </p>
-        </article>
-
-        <article id="cookies" class="reveal">
-          <div class="section-label"><span></span>Section 05</div>
-          <h2 class="font-heading font-bold text-ink-900 text-2xl sm:text-3xl mb-5">Cookies</h2>
-          <p class="text-ink-600 leading-relaxed mb-4">
-            Ce site utilise uniquement des cookies techniques strictement nécessaires à son bon fonctionnement. Aucun cookie marketing, publicitaire ou de tracking tiers n'est déposé sur votre terminal.
-          </p>
-          <ul class="list-disc list-inside marker:text-brand-600 space-y-2 text-ink-600 leading-relaxed">
-            <li><strong class="text-ink-800">Cookies de session :</strong> maintien de la navigation et sécurité.</li>
-            <li><strong class="text-ink-800">Cookies de préférences :</strong> sauvegarde de vos choix d'affichage.</li>
-            <li><strong class="text-ink-800">Pas de cookies tiers :</strong> ni Google Analytics, ni Facebook Pixel, ni outils de remarketing.</li>
-          </ul>
-        </article>
-
-        <article id="responsabilite" class="reveal">
-          <div class="section-label"><span></span>Section 06</div>
-          <h2 class="font-heading font-bold text-ink-900 text-2xl sm:text-3xl mb-5">Limitation de responsabilité</h2>
-          <p class="text-ink-600 leading-relaxed mb-4">
-            BSO Bâtiment s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur le site. Toutefois, BSO Bâtiment ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition.
-          </p>
-          <p class="text-ink-600 leading-relaxed mb-4">
-            Le site peut contenir des liens vers des sites externes. BSO Bâtiment n'exerce aucun contrôle sur ces sites tiers et décline toute responsabilité quant à leur contenu ou à leur politique de confidentialité.
-          </p>
-          <p class="text-ink-600 leading-relaxed">
-            BSO Bâtiment ne saurait être tenu responsable en cas d'interruption ou d'indisponibilité temporaire du site, notamment pour des raisons de maintenance technique, de mise à jour ou de causes extérieures.
-          </p>
-        </article>
-
-        <article id="droit" class="reveal">
-          <div class="section-label"><span></span>Section 07</div>
-          <h2 class="font-heading font-bold text-ink-900 text-2xl sm:text-3xl mb-5">Droit applicable</h2>
-          <p class="text-ink-600 leading-relaxed mb-4">
-            Les présentes mentions légales sont soumises au droit français. En cas de litige relatif à l'interprétation ou à l'exécution des présentes, les parties s'engagent à rechercher une solution amiable avant toute action judiciaire.
-          </p>
-          <p class="text-ink-600 leading-relaxed">
-            À défaut d'accord amiable, tout litige sera porté devant le Tribunal judiciaire de Avignon, seul compétent pour connaître du litige.
-          </p>
-        </article>
-
-        <!-- CTA bottom -->
-        <div class="bg-ink-50 border border-ink-100 rounded-2xl p-8 sm:p-10 text-center reveal mt-12">
-          <h3 class="font-heading font-bold text-ink-900 text-2xl sm:text-3xl mb-3">Une question ? Contactez-nous</h3>
-          <p class="text-ink-500 max-w-xl mx-auto mb-6 text-base leading-relaxed">
-            Notre équipe reste à votre disposition pour toute question relative à ces mentions légales ou à l'exercice de vos droits.
-          </p>
-          <a href="contact.html" class="btn-primary">
-            Nous contacter
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </a>
-        </div>
-
+        <ul class="space-y-5">
+          <li class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-10 h-10 bg-brand-50 rounded-lg flex items-center justify-center">
+              <i data-lucide="layers" class="w-5 h-5 text-brand-600"></i>
+            </div>
+            <div>
+              <h4 class="font-heading font-semibold text-ink-900 text-base mb-0.5">Pose ITE complète</h4>
+              <p class="text-ink-500 text-sm">Polystyrène expansé, laine de roche ou fibre de bois — selon votre projet.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-10 h-10 bg-brand-50 rounded-lg flex items-center justify-center">
+              <i data-lucide="paintbrush-2" class="w-5 h-5 text-brand-600"></i>
+            </div>
+            <div>
+              <h4 class="font-heading font-semibold text-ink-900 text-base mb-0.5">Finition enduit ou bardage</h4>
+              <p class="text-ink-500 text-sm">Enduit minéral teinté dans la masse ou bardage bois/composite — au choix.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-10 h-10 bg-brand-50 rounded-lg flex items-center justify-center">
+              <i data-lucide="badge-check" class="w-5 h-5 text-brand-600"></i>
+            </div>
+            <div>
+              <h4 class="font-heading font-semibold text-ink-900 text-base mb-0.5">Aides MaPrimeRénov' & CEE</h4>
+              <p class="text-ink-500 text-sm">RGE Qualibat : éligibilité totale aux aides de l'État.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-10 h-10 bg-brand-50 rounded-lg flex items-center justify-center">
+              <i data-lucide="trending-down" class="w-5 h-5 text-brand-600"></i>
+            </div>
+            <div>
+              <h4 class="font-heading font-semibold text-ink-900 text-base mb-0.5">Jusqu'à 30 % d'économies</h4>
+              <p class="text-ink-500 text-sm">Réduction durable de la consommation de chauffage et confort d'été.</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════
-     FOOTER
-════════════════════════════════════════════════════════════ -->
+<!-- SERVICES GRID -->
+<section class="py-20 lg:py-28 bg-ink-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-14 reveal">
+      <div class="section-label justify-center"><span></span>Nos prestations</div>
+      <h2 class="font-heading font-bold text-ink-900 text-3xl sm:text-4xl lg:text-5xl mb-4">L'ITE de A à Z,<br class="hidden sm:block" /> <span class="text-brand-600">clé en main</span></h2>
+      <p class="text-ink-500 max-w-2xl mx-auto text-base">
+        De l'audit énergétique au montage du dossier d'aides, nous vous accompagnons sur toutes les étapes de votre projet d'isolation extérieure.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <article class="service-card reveal stagger-1">
+        <div class="w-14 h-14 bg-brand-50 rounded-xl flex items-center justify-center mb-5">
+          <i data-lucide="layers" class="w-7 h-7 text-brand-600"></i>
+        </div>
+        <h3 class="font-heading font-semibold text-xl text-ink-900 mb-3">ITE polystyrène expansé</h3>
+        <p class="text-ink-500 text-sm leading-relaxed">Système le plus économique. Plaques PSE de 100 à 200 mm collées-chevillées, finition enduit minéral teinté.</p>
+      </article>
+
+      <article class="service-card reveal stagger-2">
+        <div class="w-14 h-14 bg-brand-50 rounded-xl flex items-center justify-center mb-5">
+          <i data-lucide="flame" class="w-7 h-7 text-brand-600"></i>
+        </div>
+        <h3 class="font-heading font-semibold text-xl text-ink-900 mb-3">ITE laine de roche</h3>
+        <p class="text-ink-500 text-sm leading-relaxed">Excellente performance acoustique et résistance au feu (incombustible). Solution recommandée pour bâti collectif et zones exposées.</p>
+      </article>
+
+      <article class="service-card reveal stagger-3">
+        <div class="w-14 h-14 bg-brand-50 rounded-xl flex items-center justify-center mb-5">
+          <i data-lucide="leaf" class="w-7 h-7 text-brand-600"></i>
+        </div>
+        <h3 class="font-heading font-semibold text-xl text-ink-900 mb-3">ITE biosourcée</h3>
+        <p class="text-ink-500 text-sm leading-relaxed">Fibre de bois ou ouate de cellulose : isolation écologique, déphasage thermique optimal pour le confort d'été en Provence.</p>
+      </article>
+
+      <article class="service-card reveal stagger-1">
+        <div class="w-14 h-14 bg-brand-50 rounded-xl flex items-center justify-center mb-5">
+          <i data-lucide="paintbrush-2" class="w-7 h-7 text-brand-600"></i>
+        </div>
+        <h3 class="font-heading font-semibold text-xl text-ink-900 mb-3">Bardage rapporté</h3>
+        <p class="text-ink-500 text-sm leading-relaxed">Bardage bois, composite ou métallique sur ossature ventilée — finition contemporaine et grande durabilité.</p>
+      </article>
+
+      <article class="service-card reveal stagger-2">
+        <div class="w-14 h-14 bg-brand-50 rounded-xl flex items-center justify-center mb-5">
+          <i data-lucide="badge-check" class="w-7 h-7 text-brand-600"></i>
+        </div>
+        <h3 class="font-heading font-semibold text-xl text-ink-900 mb-3">Montage dossier MaPrimeRénov'</h3>
+        <p class="text-ink-500 text-sm leading-relaxed">Nous vous aidons à monter votre dossier de demande d'aides : MaPrimeRénov', CEE, éco-PTZ et TVA réduite.</p>
+      </article>
+
+      <article class="service-card reveal stagger-3">
+        <div class="w-14 h-14 bg-brand-50 rounded-xl flex items-center justify-center mb-5">
+          <i data-lucide="search" class="w-7 h-7 text-brand-600"></i>
+        </div>
+        <h3 class="font-heading font-semibold text-xl text-ink-900 mb-3">Audit & étude thermique</h3>
+        <p class="text-ink-500 text-sm leading-relaxed">Analyse de votre bâti, calcul du gain énergétique attendu et préconisation du système ITE le plus adapté.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- NORMES & SÉCURITÉ (dark) -->
+<section class="relative py-20 lg:py-28 overflow-hidden bg-ink-900">
+  <div class="absolute inset-0">
+    <img src="assets/img/electricite-banner.jpg" alt="" class="w-full h-full object-cover opacity-15" />
+    <div class="absolute inset-0 bg-ink-900/80"></div>
+  </div>
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-14 reveal">
+      <div class="section-label justify-center"><span></span>Normes & sécurité</div>
+      <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl mb-4">Des installations<br class="hidden sm:block" /> <span class="text-brand-500">irréprochables</span></h2>
+      <p class="text-white/70 max-w-2xl mx-auto text-base">
+        Chaque intervention respecte les réglementations en vigueur et s'accompagne de garanties solides pour votre tranquillité.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-8 reveal stagger-1">
+        <div class="w-14 h-14 bg-brand-600 rounded-xl flex items-center justify-center mb-5">
+          <i data-lucide="book-check" class="w-7 h-7 text-white"></i>
+        </div>
+        <h3 class="font-heading font-semibold text-xl text-white mb-3">NF C 15-100</h3>
+        <p class="text-white/70 text-sm leading-relaxed">Respect intégral de la norme française régissant les installations électriques basse tension en habitation.</p>
+      </div>
+
+      <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-8 reveal stagger-2">
+        <div class="w-14 h-14 bg-brand-600 rounded-xl flex items-center justify-center mb-5">
+          <i data-lucide="file-check-2" class="w-7 h-7 text-white"></i>
+        </div>
+        <h3 class="font-heading font-semibold text-xl text-white mb-3">Consuel</h3>
+        <p class="text-white/70 text-sm leading-relaxed">Délivrance de l'attestation de conformité Consuel nécessaire pour la mise en service par Enedis.</p>
+      </div>
+
+      <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-8 reveal stagger-3">
+        <div class="w-14 h-14 bg-brand-600 rounded-xl flex items-center justify-center mb-5">
+          <i data-lucide="shield" class="w-7 h-7 text-white"></i>
+        </div>
+        <h3 class="font-heading font-semibold text-xl text-white mb-3">Garantie décennale</h3>
+        <p class="text-white/70 text-sm leading-relaxed">Nos maçons sont assurés en responsabilité civile et décennale pour une protection totale.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESSUS -->
+<section class="py-20 lg:py-28 bg-ink-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-14 reveal">
+      <div class="section-label justify-center"><span></span>Processus</div>
+      <h2 class="font-heading font-bold text-ink-900 text-3xl sm:text-4xl lg:text-5xl mb-4">Notre méthode en<br class="hidden sm:block" /> <span class="text-brand-600">4 étapes</span></h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="process-card reveal stagger-1">
+        <div class="process-badge">01</div>
+        <div class="w-12 h-12 bg-brand-50 rounded-lg flex items-center justify-center mb-4">
+          <i data-lucide="search-check" class="w-6 h-6 text-brand-600"></i>
+        </div>
+        <h3 class="font-heading font-semibold text-ink-900 text-lg mb-2">Diagnostic</h3>
+        <p class="text-ink-500 text-sm leading-relaxed">Analyse approfondie de votre installation pour identifier l'origine exacte du problème.</p>
+      </div>
+      <div class="process-card reveal stagger-2">
+        <div class="process-badge">02</div>
+        <div class="w-12 h-12 bg-brand-50 rounded-lg flex items-center justify-center mb-4">
+          <i data-lucide="file-text" class="w-6 h-6 text-brand-600"></i>
+        </div>
+        <h3 class="font-heading font-semibold text-ink-900 text-lg mb-2">Devis transparent</h3>
+        <p class="text-ink-500 text-sm leading-relaxed">Proposition détaillée, sans frais cachés, validée avant tout démarrage d'intervention.</p>
+      </div>
+      <div class="process-card reveal stagger-3">
+        <div class="process-badge">03</div>
+        <div class="w-12 h-12 bg-brand-50 rounded-lg flex items-center justify-center mb-4">
+          <i data-lucide="shield-check" class="w-6 h-6 text-brand-600"></i>
+        </div>
+        <h3 class="font-heading font-semibold text-ink-900 text-lg mb-2">Mise en sécurité</h3>
+        <p class="text-ink-500 text-sm leading-relaxed">Intervention soignée, pièces aux normes et vérification complète du bon fonctionnement.</p>
+      </div>
+      <div class="process-card reveal stagger-4">
+        <div class="process-badge">04</div>
+        <div class="w-12 h-12 bg-brand-50 rounded-lg flex items-center justify-center mb-4">
+          <i data-lucide="award" class="w-6 h-6 text-brand-600"></i>
+        </div>
+        <h3 class="font-heading font-semibold text-ink-900 text-lg mb-2">Attestation de conformité</h3>
+        <p class="text-ink-500 text-sm leading-relaxed">Remise d'un document officiel attestant la conformité de l'installation et sa garantie.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="bg-brand-600 py-16 lg:py-20">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6 reveal">
+      Une panne électrique ?
+    </h2>
+    <p class="text-white/90 text-base sm:text-lg max-w-2xl mx-auto mb-8 reveal stagger-1">
+      Nos maçons sont disponibles 24h/24 et 7j/7 pour intervenir rapidement à votre domicile dans tout le département du Vaucluse.
+    </p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 reveal stagger-2">
+      <a href="tel:0773292452" class="inline-flex items-center justify-center gap-2 bg-white text-brand-600 px-8 py-4 rounded-full font-semibold text-sm uppercase tracking-wider shadow-lg hover:bg-ink-50 transition-all">
+        <i data-lucide="phone" class="w-4 h-4"></i>
+        07 73 29 24 52
+      </a>
+      <a href="contact.html" class="btn-outline-light">
+        Demander un devis
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer class="bg-ink-900 text-white pt-16 pb-8">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
@@ -477,18 +560,14 @@
   </div>
 </footer>
 
-<!-- ═══════════════════════════════════════════════════════════
-     FLOATING MOBILE CTA
-════════════════════════════════════════════════════════════ -->
+<!-- FLOATING MOBILE CTA -->
 <div id="floating-cta" class="fixed bottom-6 right-6 z-50 lg:hidden opacity-0 translate-y-4 transition-all duration-500">
   <a href="tel:0773292452" class="flex items-center justify-center w-14 h-14 bg-brand-600 text-white rounded-full float-cta">
     <i data-lucide="phone" class="w-6 h-6"></i>
   </a>
 </div>
 
-<!-- ═══════════════════════════════════════════════════════════
-     JS
-════════════════════════════════════════════════════════════ -->
+<!-- JS -->
 <script>
   if (typeof lucide !== 'undefined') lucide.createIcons();
 
