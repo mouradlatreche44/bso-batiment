@@ -9,29 +9,7 @@
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (reduce) return;
 
-  /* ── 1. Lenis smooth scroll ── */
-  if (window.Lenis) {
-    const lenis = new window.Lenis({
-      duration: 1.15,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      smoothWheel: true,
-      smoothTouch: false,
-    });
-    function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
-    requestAnimationFrame(raf);
-    window.__lenis = lenis;
-
-    // Anchor links cooperate with Lenis
-    document.querySelectorAll('a[href^="#"]').forEach((a) => {
-      a.addEventListener('click', (e) => {
-        const target = a.getAttribute('href');
-        if (target && target.length > 1) {
-          const el = document.querySelector(target);
-          if (el) { e.preventDefault(); lenis.scrollTo(el, { offset: -90 }); }
-        }
-      });
-    });
-  }
+  /* ── 1. (Lenis disabled — using native scroll) ── */
 
   /* ── 2. GSAP + ScrollTrigger reveals ── */
   if (window.gsap && window.ScrollTrigger) {
@@ -138,38 +116,9 @@
     card.addEventListener('mouseleave', () => { card.style.transform = ''; });
   });
 
-  /* ── 5. Custom cursor follower (desktop only) ── */
-  if (window.matchMedia('(pointer: fine)').matches && window.innerWidth > 900) {
-    const dot = document.createElement('div');
-    dot.id = 'bso-cursor';
-    dot.innerHTML = '<span></span>';
-    document.body.appendChild(dot);
-    const style = document.createElement('style');
-    style.textContent = `
-      #bso-cursor{position:fixed;top:0;left:0;width:36px;height:36px;border:1.5px solid rgba(217,119,6,.45);border-radius:50%;pointer-events:none;z-index:9999;mix-blend-mode:difference;transform:translate(-50%,-50%);transition:width .35s cubic-bezier(.32,.72,0,1),height .35s cubic-bezier(.32,.72,0,1),background .25s ease,border-color .25s ease}
-      #bso-cursor span{position:absolute;top:50%;left:50%;width:5px;height:5px;background:#d97706;border-radius:50%;transform:translate(-50%,-50%);transition:transform .35s cubic-bezier(.32,.72,0,1)}
-      #bso-cursor.is-hover{width:62px;height:62px;background:rgba(217,119,6,.12);border-color:rgba(217,119,6,.85)}
-      #bso-cursor.is-hover span{transform:translate(-50%,-50%) scale(1.6)}
-      @media (max-width:900px){#bso-cursor{display:none}}
-      a, button, .service-card, .process-card, .review-card, .atout-card, [data-cursor]{cursor:none}
-    `;
-    document.head.appendChild(style);
-    let mx = 0, my = 0, cx = 0, cy = 0;
-    document.addEventListener('mousemove', (e) => { mx = e.clientX; my = e.clientY; });
-    function tick() {
-      cx += (mx - cx) * 0.18;
-      cy += (my - cy) * 0.18;
-      dot.style.transform = `translate(${cx}px, ${cy}px) translate(-50%,-50%)`;
-      requestAnimationFrame(tick);
-    }
-    tick();
-    document.querySelectorAll('a, button, .service-card, .process-card, .review-card, .atout-card').forEach((el) => {
-      el.addEventListener('mouseenter', () => dot.classList.add('is-hover'));
-      el.addEventListener('mouseleave', () => dot.classList.remove('is-hover'));
-    });
-  }
+  /* ── 5. (Custom cursor disabled) ── */
 
-  /* ── 6. Marquee speed-up on hover ── */
+  /* ── 6. Marquee pause on hover ── */
   document.querySelectorAll('.marquee-track').forEach((mq) => {
     mq.addEventListener('mouseenter', () => mq.style.animationPlayState = 'paused');
     mq.addEventListener('mouseleave', () => mq.style.animationPlayState = 'running');
