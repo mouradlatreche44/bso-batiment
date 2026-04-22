@@ -1,739 +1,162 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>À propos — BSO Bâtiment, artisan maçon RGE Qualibat dans le Vaucluse depuis 2018</title>
-  <meta name="description" content="BSO Bâtiment : entreprise familiale du Vaucluse depuis 2018, certifiée RGE Qualibat. Maçonnerie, isolation thermique extérieure (ITE) et rénovation complète pour particuliers à Avignon, Carpentras, Orange et tout le 84." />
-  <meta name="keywords" content="BSO Bâtiment, artisan maçon Vaucluse, entreprise bâtiment Avignon, maçon RGE Qualibat, histoire BSO, valeurs artisan 84" />
-  <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="À propos — BSO Bâtiment" />
-  <meta property="og:description" content="artisans du bâtiment installés dans le Vaucluse : notre histoire, nos valeurs, nos engagements." />
-  <meta property="og:type" content="website" />
-  <link rel="canonical" href="https://bso-batiment.fr/a-propos.html" />
-  <meta name="author" content="BSO Bâtiment" />
-  <meta name="geo.region" content="FR-84" />
-  <meta name="geo.placename" content="Avignon, Vaucluse" />
-  <meta property="og:locale" content="fr_FR" />
-  <meta property="og:site_name" content="BSO Bâtiment" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Kanit:wght@400;600;700;800&display=swap" rel="stylesheet" />
-
-  <!-- Lucide icons (premium icon set) -->
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            heading: ['Outfit', 'sans-serif'],
-            kanit: ['Kanit', 'sans-serif'],
-            body: ['Inter', 'sans-serif'],
-          },
-          colors: {
-            brand: {
-              50:  '#fffbeb',
-              100: '#fef3c7',
-              200: '#fde68a',
-              300: '#fcd34d',
-              400: '#fbbf24',
-              500: '#f59e0b',
-              600: '#d97706',
-              700: '#b45309',
-              800: '#92400e',
-              900: '#78350f',
-            },
-            ink: {
-              50:  '#f8fafc',
-              100: '#f1f5f9',
-              200: '#e2e8f0',
-              300: '#cbd5e1',
-              400: '#94a3b8',
-              500: '#64748b',
-              600: '#475569',
-              700: '#334155',
-              800: '#1e293b',
-              900: '#0f172a',
-            },
-          },
-        },
-      },
-    };
-  </script>
-
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-    body { font-family: 'Inter', sans-serif; background: #ffffff; color: #0f172a; overflow-x: hidden; line-height: 1.6; }
-    h1, h2, h3, h4, h5 { font-family: 'Outfit', sans-serif; letter-spacing: -0.02em; }
-    ::selection { background: #d97706; color: white; }
-
-    /* ── Navbar ── */
-    #navbar { transition: all 0.35s cubic-bezier(0.4,0,0.2,1); }
-    #navbar.scrolled { background: rgba(255,255,255,0.98); backdrop-filter: blur(14px); box-shadow: 0 1px 20px rgba(0,0,0,0.06); }
-    .nav-link { position: relative; font-family: 'Outfit', sans-serif; font-weight: 700; color: #1e293b; transition: color 0.2s ease; font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; }
-    .nav-link::after { content:''; position:absolute; bottom:-6px; left:0; width:0; height:2px; background:#d97706; transition: width 0.3s ease; }
-    .nav-link:hover { color: #d97706; }
-    .nav-link:hover::after { width: 100%; }
-
-    /* ── Section label ── */
-    .section-label { display: inline-flex; align-items: center; gap: 8px; color: #d97706; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 16px; }
-    .section-label::before { content:''; display:inline-block; width: 24px; height: 1px; background: #d97706; }
-
-    /* ── Buttons ── */
-    .btn-primary { display:inline-flex; align-items:center; justify-content:center; gap: 8px; background:#d97706; color:white; padding: 13px 28px; border-radius: 999px; font-weight:600; font-size:14px; letter-spacing: 0.04em; text-transform: uppercase; transition: all 0.25s cubic-bezier(0.4,0,0.2,1); box-shadow: 0 6px 20px -6px rgba(217,119,6,0.5); }
-    .btn-primary:hover { background:#b45309; transform: translateY(-1px); box-shadow: 0 10px 28px -6px rgba(217,119,6,0.6); }
-    .btn-outline-light { display:inline-flex; align-items:center; justify-content:center; gap: 8px; background:transparent; color:white; padding: 12px 28px; border-radius: 999px; font-weight:600; font-size:14px; letter-spacing: 0.04em; text-transform: uppercase; border: 1.5px solid rgba(255,255,255,0.4); transition: all 0.25s ease; }
-    .btn-outline-light:hover { background: white; color: #111827; border-color: white; }
-    .btn-ghost { display:inline-flex; align-items:center; gap: 8px; color:#d97706; font-weight:600; font-size:13px; letter-spacing: 0.1em; text-transform: uppercase; transition: gap 0.25s ease; }
-    .btn-ghost:hover { gap: 14px; }
-
-    /* ── Scroll animations ── */
-    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1); }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-    .reveal-left { opacity: 0; transform: translateX(-40px); transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1); }
-    .reveal-left.visible { opacity: 1; transform: translateX(0); }
-    .reveal-right { opacity: 0; transform: translateX(40px); transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1); }
-    .reveal-right.visible { opacity: 1; transform: translateX(0); }
-    .stagger-1 { transition-delay: .08s; }
-    .stagger-2 { transition-delay: .16s; }
-    .stagger-3 { transition-delay: .24s; }
-    .stagger-4 { transition-delay: .32s; }
-
-    /* ── Service card ── */
-    .service-card { background:white; border-radius: 16px; overflow:hidden; transition: all 0.4s cubic-bezier(0.23,1,0.32,1); border: 1px solid #f1f5f9; }
-    .service-card:hover { transform: translateY(-6px); box-shadow: 0 30px 60px -20px rgba(15,23,42,0.18); border-color: #fde68a; }
-    .service-card .service-img { transition: transform 0.6s cubic-bezier(0.23,1,0.32,1); }
-    .service-card:hover .service-img { transform: scale(1.06); }
-
-    /* ── Counter ── */
-    .counter { display: inline-block; }
-
-    /* ── Process cards ── */
-    .process-card { background:white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 28px 24px; transition: all 0.3s ease; position: relative; }
-    .process-card:hover { border-color: #d97706; box-shadow: 0 20px 40px -20px rgba(217,119,6,0.25); transform: translateY(-4px); }
-    .process-badge { position:absolute; top:-14px; right: 20px; background:#d97706; color:white; font-family:'Outfit',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.1em; padding: 4px 10px; border-radius: 4px; }
-
-    /* ── Floating CTA ── */
-    .float-cta { animation: pulseRing 2.4s ease-in-out infinite; }
-    @keyframes pulseRing {
-      0%, 100% { box-shadow: 0 6px 24px rgba(217,119,6,0.45), 0 0 0 0 rgba(217,119,6,0.45); }
-      50% { box-shadow: 0 6px 24px rgba(217,119,6,0.55), 0 0 0 12px rgba(217,119,6,0); }
-    }
-
-    /* ── Dropdown ── */
-    .dropdown:hover .dropdown-menu { opacity: 1; transform: translateY(0); pointer-events: auto; }
-    .dropdown-menu { opacity: 0; transform: translateY(8px); pointer-events: none; transition: all 0.2s ease; }
-    .dropdown::after { content: ''; position: absolute; left: 0; right: 0; top: 100%; height: 18px; }
-
-    /* ── Scrollbar ── */
-    ::-webkit-scrollbar { width: 8px; }
-    ::-webkit-scrollbar-track { background: #f1f5f9; }
-    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
-    ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
-
-    /* ── Hero overlay ── */
-    .hero-overlay { background: linear-gradient(180deg, rgba(15,23,42,0.55) 0%, rgba(15,23,42,0.75) 100%); }
-
-    /* ── Stat number ── */
-    .stat-number { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(2.25rem, 4.5vw, 3.5rem); line-height: 1; letter-spacing: -0.03em; color: white; }
-
-    /* ── Topbar ── */
-    .topbar { background: #0f172a; color: #cbd5e1; font-size: 12px; letter-spacing: 0.08em; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>L'Atelier BSO Bâtiment — Artisan bâtisseur dans le Vaucluse depuis 2018</title>
+<meta name="description" content="Découvrez BSO Bâtiment, atelier d'artisans maçons et rénovateurs dans le Vaucluse depuis 2018. Engagement RGE, garantie décennale, transparence des devis." />
+<meta name="geo.region" content="FR-84" />
+<meta name="geo.placename" content="Avignon, Vaucluse" />
+<link rel="canonical" href="https://bso-batiment.fr/a-propos.html" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:title" content="L'Atelier BSO Bâtiment — Artisan bâtisseur dans le Vaucluse depuis 2018" />
+<meta property="og:description" content="Découvrez BSO Bâtiment, atelier d'artisans maçons et rénovateurs dans le Vaucluse depuis 2018. Engagement RGE, garantie décennale, transparence des devis." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/bso.css" />
+<link rel="stylesheet" href="assets/css/sobre.css" />
+<script src="assets/js/icons.js"></script>
 </head>
 <body>
 
-<!-- ═══════════════════════════════════════════════════════════
-     TOPBAR
-════════════════════════════════════════════════════════════ -->
-<div class="topbar hidden md:block">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center h-9 text-center">
-    <span class="uppercase tracking-widest text-xs">artisans du bâtiment 24h/24 · 7j/7 dans le Vaucluse (84)</span>
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="topbar-item"><span id="ic-pin1"></span> Vaucluse (84) · Avignon · Carpentras · Orange</div>
+    <div style="display:flex; gap: 32px;">
+      <a href="tel:0773292452" class="topbar-item"><span id="ic-ph1"></span> 07 73 29 24 52</a>
+      <a href="mailto:bso.construction@gmx.com" class="topbar-item"><span id="ic-m1"></span> bso.construction@gmx.com</a>
+    </div>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════════════════════════
-     NAVBAR
-════════════════════════════════════════════════════════════ -->
-<nav id="navbar" class="sticky top-0 left-0 right-0 z-50 bg-white border-b border-ink-100">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-20">
-      <!-- Logo -->
-      <a href="index.html" class="flex items-center gap-3 flex-shrink-0">
-        <svg viewBox="0 0 100 100" class="h-10 w-auto flex-shrink-0" xmlns="http://www.w3.org/2000/svg" aria-label="BSO Bâtiment">
-          <!-- 3 wedges : navy + orange terre -->
-          <path d="M50,50 L50,2 A48,48 0 0,1 91.57,74 Z" fill="#0a1f44"/>
-          <path d="M50,50 L91.57,74 A48,48 0 0,1 8.43,74 Z" fill="#d97706"/>
-          <path d="M50,50 L8.43,74 A48,48 0 0,1 50,2 Z" fill="#1a2d5a"/>
-          <!-- BTP icons in white (hammer / layers / home) -->
-          <g fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <g transform="translate(38 14)"><path d="M15 12l-8.5 8.5a2.12 2.12 0 1 1-3-3L12 9"/><path d="M17.64 15 22 10.64"/><path d="m20.91 11.7-1.25-1.25a2.5 2.5 0 0 1 0-3.54l1.6-1.6a2.5 2.5 0 0 1 3.54 0l1.25 1.25"/></g>
-            <g transform="translate(54 56)"><path d="M5 3 2 8l3 5h14l3-5-3-5H5z"/><path d="M2 13l3 5h14l3-5"/></g>
-            <g transform="translate(20 56)"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></g>
-          </g>
-        </svg>
-        <span class="font-kanit font-bold text-xl sm:text-2xl text-blue-950 tracking-tight">BSO <span class="text-brand-600">Bâtiment</span></span>
-      </a>
-
-      <!-- Desktop nav -->
-      <div class="hidden lg:flex items-center gap-10">
-        <div class="relative dropdown">
-          <button class="nav-link flex items-center gap-1.5">
-            Services
-            <i data-lucide="chevron-down" class="w-4 h-4"></i>
-          </button>
-          <div class="dropdown-menu absolute top-full left-1/2 -translate-x-1/2 mt-3 w-60 bg-white rounded-xl shadow-2xl border border-ink-100 p-2 z-50">
-            <a href="maconnerie.html" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-brand-50 transition-colors text-ink-800 text-xs font-bold uppercase tracking-wider">
-              <i data-lucide="hammer" class="w-4 h-4 text-brand-600"></i> Maçonnerie
-            </a>
-            <a href="isolation-thermique.html" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-brand-50 transition-colors text-ink-800 text-xs font-bold uppercase tracking-wider">
-              <i data-lucide="layers" class="w-4 h-4 text-brand-600"></i> Isolation thermique
-            </a>
-            <a href="renovation.html" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-brand-50 transition-colors text-ink-800 text-xs font-bold uppercase tracking-wider">
-              <i data-lucide="home" class="w-4 h-4 text-brand-600"></i> Rénovation
-            </a>
-          </div>
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/img/logo-bso.png" alt="BSO Bâtiment" /></a>
+    <div class="nav-menu">
+      <div class="nav-drop">
+        <a href="index.html#services" class="nav-link">Métiers</a>
+        <div class="nav-drop-menu">
+          <a href="maconnerie.html">Maçonnerie générale</a>
+          <a href="isolation-thermique.html">ITE — Isolation extérieure</a>
+          <a href="renovation.html">Rénovation complète</a>
         </div>
-        <a href="a-propos.html" class="nav-link">À propos</a>
-        <a href="contact.html" class="nav-link">Contact</a>
       </div>
-
-      <!-- Right CTA -->
-      <div class="flex items-center gap-3">
-        <a href="tel:0773292452" class="hidden sm:inline-flex btn-primary">
-          <i data-lucide="phone" class="w-4 h-4"></i>
-          07 73 29 24 52
-        </a>
-
-        <!-- Mobile burger -->
-        <button id="burger-btn" class="lg:hidden p-2 rounded-lg text-ink-800" aria-label="Menu">
-          <i id="burger-icon" data-lucide="menu" class="w-7 h-7"></i>
-          <i id="close-icon" data-lucide="x" class="w-7 h-7 hidden"></i>
-        </button>
-      </div>
+      <a href="index.html#process" class="nav-link">Méthode</a>
+      <a href="a-propos.html" class="nav-link">L'Atelier</a>
+      <a href="index.html#realizations" class="nav-link">Réalisations</a>
+      <a href="index.html#testimonials" class="nav-link">Avis</a>
+      <a href="contact.html" class="nav-link">Contact</a>
     </div>
-  </div>
-
-  <!-- Mobile menu -->
-  <div id="mobile-menu" class="hidden lg:hidden border-t border-ink-100">
-    <div class="px-4 py-4 space-y-1">
-      <a href="index.html" class="block px-4 py-3 rounded-lg text-ink-700 hover:bg-ink-50 font-medium text-sm">Accueil</a>
-      <button id="mobile-services-btn" class="w-full flex items-center justify-between px-4 py-3 rounded-lg text-ink-700 hover:bg-ink-50 font-medium text-sm">
-        Services
-        <i id="mobile-services-chevron" data-lucide="chevron-down" class="w-4 h-4 transition-transform"></i>
-      </button>
-      <div id="mobile-services-menu" class="hidden pl-4 space-y-1">
-        <a href="maconnerie.html" class="flex items-center gap-2 px-4 py-2.5 rounded-lg text-ink-700 hover:bg-brand-50 text-xs font-bold uppercase tracking-wider"><i data-lucide="hammer" class="w-4 h-4 text-brand-600"></i> Maçonnerie</a>
-        <a href="isolation-thermique.html" class="flex items-center gap-2 px-4 py-2.5 rounded-lg text-ink-700 hover:bg-brand-50 text-xs font-bold uppercase tracking-wider"><i data-lucide="layers" class="w-4 h-4 text-brand-600"></i> Isolation thermique</a>
-        <a href="renovation.html" class="flex items-center gap-2 px-4 py-2.5 rounded-lg text-ink-700 hover:bg-brand-50 text-xs font-bold uppercase tracking-wider"><i data-lucide="home" class="w-4 h-4 text-brand-600"></i> Rénovation</a>
-      </div>
-      <a href="a-propos.html" class="block px-4 py-3 rounded-lg text-brand-600 font-semibold text-sm bg-brand-50">À propos</a>
-      <a href="contact.html" class="block px-4 py-3 rounded-lg text-ink-700 hover:bg-ink-50 font-medium text-sm">Contact</a>
-      <a href="tel:0773292452" class="block text-center mt-3 btn-primary w-full">
-        07 73 29 24 52
-      </a>
-    </div>
+    <a href="contact.html" class="nav-cta"><span id="ic-ph2"></span> Devis gratuit</a>
+    <button class="nav-burger" id="navBurger" aria-label="Menu"><span id="ic-burger"></span></button>
   </div>
 </nav>
 
-<!-- ═══════════════════════════════════════════════════════════
-     HERO
-════════════════════════════════════════════════════════════ -->
-<section class="relative min-h-[55vh] flex items-center justify-center overflow-hidden">
-  <div class="absolute inset-0">
-    <img src="assets/img/portrait-atelier.jpeg" alt="Artisan BSO Bâtiment en atelier" class="w-full h-full object-cover" />
-    <div class="absolute inset-0 hero-overlay"></div>
+<aside class="mobile-drawer" id="mobileDrawer">
+  <div class="mobile-drawer-head">
+    <img src="assets/img/logo-bso.png" alt="BSO" style="height:44px;" />
+    <button class="mobile-drawer-close" id="drawerClose" aria-label="Fermer"><span id="ic-close"></span></button>
   </div>
+  <nav class="mobile-drawer-menu">
+    <a href="index.html">Accueil</a>
+    <a href="maconnerie.html">Maçonnerie</a>
+    <a href="isolation-thermique.html">ITE</a>
+    <a href="renovation.html">Rénovation</a>
+    <a href="a-propos.html">L'Atelier</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="mobile-drawer-cta">
+    <a href="tel:0773292452" class="btn btn-primary" style="width:100%;">07 73 29 24 52</a>
+  </div>
+</aside>
 
-  <div class="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-    <div class="inline-flex items-center gap-2 text-brand-300 text-xs font-semibold tracking-[0.2em] uppercase mb-4 reveal">
-      <span class="w-6 h-px bg-brand-300"></span>
-      Notre entreprise
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <div class="reveal">
+      <div class="crumb"><a href="index.html">Accueil</a> <span>·</span> <span>L'Atelier</span></div>
+      <span class="eyebrow">L'atelier BSO</span>
+      <h1>Le bâti,<br/>notre <em>métier de cœur</em></h1>
+      <p>Artisan bâtisseur dans le Vaucluse depuis 2018, BSO Bâtiment signe chaque chantier avec la même rigueur — qu'il s'agisse d'un percement de mur ou d'une rénovation complète clé en main.</p>
     </div>
-    <h1 class="font-heading font-bold text-white text-4xl sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight mb-6 reveal stagger-1">
-      À propos de <span class="text-brand-500">BSO Bâtiment</span>
-    </h1>
-    <p class="text-white/80 text-lg sm:text-xl font-light mb-6 reveal stagger-2">
-      L'artisanat bâtiment & rénovation au cœur du Vaucluse
-    </p>
-    <div class="reveal stagger-3 text-white/60 text-xs tracking-[0.2em] uppercase">
-      <a href="index.html" class="hover:text-white">Accueil</a>
-      <span class="mx-2">/</span>
-      <span class="text-white">À propos</span>
+    <div class="page-hero-img reveal-scale d-1"><img src="assets/img/artisan-camionnette.jpeg" alt="Artisan BSO Bâtiment Vaucluse" /></div>
+  </div>
+</section>
+
+<section class="s about">
+  <div class="container about-grid">
+    <div class="about-visual reveal-left">
+      <div class="about-img"><img src="assets/img/portrait-atelier.jpeg" alt="Atelier BSO Bâtiment" /></div>
+      <div class="about-card"><div class="about-card-num">2018</div><div class="about-card-label">Fondation de l'atelier</div></div>
+    </div>
+    <div class="about-content reveal-right">
+      <span class="eyebrow">Notre histoire</span>
+      <h2>Fondé en 2018,<br/>fidèle à un <em>geste juste</em></h2>
+      <p class="about-lead">BSO Bâtiment est née d'une conviction simple : la maçonnerie est un métier d'artisan, pas un produit industriel. Chaque chantier mérite un regard attentif, une exécution soignée et une transparence totale sur les choix techniques et financiers.</p>
+      <p class="about-lead">Implantés dans le Vaucluse, nous intervenons d'Avignon à Vaison-la-Romaine, du Luberon à Pertuis. Notre équipe maîtrise tout le spectre du bâti : maçonnerie traditionnelle, isolation thermique extérieure et rénovation clé en main.</p>
+      <p class="about-signature">« Un artisan proche de vous,<br/>du premier échange jusqu'à la clé. »</p>
+      <div class="about-features">
+        <div class="about-feature"><span class="about-feature-icon" id="ic-af1"></span><div><h5>Transparence des devis</h5><p>Chiffrage ligne par ligne, aucune surprise.</p></div></div>
+        <div class="about-feature"><span class="about-feature-icon" id="ic-af2"></span><div><h5>Finition soignée</h5><p>Le détail qui fait la différence.</p></div></div>
+        <div class="about-feature"><span class="about-feature-icon" id="ic-af3"></span><div><h5>Matériaux certifiés</h5><p>Weber, Knauf, Sto, Rockwool.</p></div></div>
+        <div class="about-feature"><span class="about-feature-icon" id="ic-af4"></span><div><h5>Chantier propre</h5><p>Respect des lieux et des voisins.</p></div></div>
+      </div>
+      <a href="contact.html" class="btn btn-dark">Échanger avec l'atelier <span id="ic-af5"></span></a>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════
-     NOTRE HISTOIRE
-════════════════════════════════════════════════════════════ -->
-<section class="py-20 lg:py-28 bg-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="stat reveal d-1"><span class="stat-icon" id="ic-stt1"></span><div class="stat-num" data-count="2018">2018</div><div class="stat-label">Année de fondation</div></div>
+    <div class="stat reveal d-2"><span class="stat-icon" id="ic-stt2"></span><div class="stat-num"><span data-count="10">10</span><em> ans</em></div><div class="stat-label">Garantie décennale</div></div>
+    <div class="stat reveal d-3"><span class="stat-icon" id="ic-stt3"></span><div class="stat-num"><span data-count="150">150</span>+</div><div class="stat-label">Chantiers livrés</div></div>
+    <div class="stat reveal d-4"><span class="stat-icon" id="ic-stt4"></span><div class="stat-num"><span data-count="48">48</span>h</div><div class="stat-label">Devis gratuit</div></div>
+  </div>
+</section>
 
-      <div class="relative reveal-left">
-        <div class="relative rounded-2xl overflow-hidden aspect-[4/5] max-w-md mx-auto lg:mx-0">
-          <img src="assets/img/artisan-camionnette.jpeg" alt="Camionnette BSO Bâtiment dans le Vaucluse" class="w-full h-full object-cover" />
-          <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur rounded-xl p-5 shadow-xl">
-            <div class="flex items-center gap-3">
-              <svg viewBox="0 0 100 100" class="h-9 w-auto flex-shrink-0" xmlns="http://www.w3.org/2000/svg" aria-label="BSO Bâtiment">
-          <!-- 3 wedges : navy + orange terre -->
-          <path d="M50,50 L50,2 A48,48 0 0,1 91.57,74 Z" fill="#0a1f44"/>
-          <path d="M50,50 L91.57,74 A48,48 0 0,1 8.43,74 Z" fill="#d97706"/>
-          <path d="M50,50 L8.43,74 A48,48 0 0,1 50,2 Z" fill="#1a2d5a"/>
-          <!-- BTP icons in white (hammer / layers / home) -->
-          <g fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <g transform="translate(38 14)"><path d="M15 12l-8.5 8.5a2.12 2.12 0 1 1-3-3L12 9"/><path d="M17.64 15 22 10.64"/><path d="m20.91 11.7-1.25-1.25a2.5 2.5 0 0 1 0-3.54l1.6-1.6a2.5 2.5 0 0 1 3.54 0l1.25 1.25"/></g>
-            <g transform="translate(54 56)"><path d="M5 3 2 8l3 5h14l3-5-3-5H5z"/><path d="M2 13l3 5h14l3-5"/></g>
-            <g transform="translate(20 56)"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></g>
-          </g>
-        </svg>
-              <span class="font-kanit font-bold text-lg text-blue-950 tracking-tight">BSO <span class="text-brand-600">Bâtiment</span></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hidden sm:block absolute -bottom-8 -right-4 lg:-right-10 w-56 rounded-xl overflow-hidden shadow-2xl border-4 border-white">
-          <div class="relative aspect-[4/3]">
-            <img src="assets/img/portrait-atelier.jpeg" alt="Artisan en atelier" class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-ink-900/55 flex items-center justify-center">
-              <div class="text-center text-white px-2">
-                <div class="font-heading font-bold text-2xl">30+</div>
-                <div class="text-[10px] tracking-widest uppercase">Ans d'expérience</div>
-                <div class="text-[9px] text-white/70 mt-0.5">Au service du Vaucluse</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="reveal-right">
-        <div class="section-label"><span></span>Notre histoire</div>
-        <h2 class="font-heading font-bold text-ink-900 text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-          Des artisans locaux<br />
-          au service de <span class="text-brand-600">le Vaucluse</span>
-        </h2>
-        <p class="text-ink-500 text-base leading-relaxed mb-5">
-          BSO Bâtiment est née en 2018 d'une conviction simple : les habitants du Vaucluse méritent un artisan local de confiance, capable d'orchestrer un chantier de A à Z avec rigueur et finitions soignées. Implantés au cœur du département, nous accompagnons particuliers et copropriétés sur trois métiers complémentaires — la maçonnerie, l'isolation thermique extérieure et la rénovation complète — sous certification RGE Qualibat et garantie décennale.
-        </p>
-        <p class="text-ink-500 text-base leading-relaxed mb-5">
-          Notre force, c'est la proximité. Nous connaissons les communes, les artisans partenaires, les fournisseurs locaux — ce qui nous permet d'intervenir rapidement et de proposer des tarifs justes. Chaque chantier, qu'il s'agisse d'une fuite d'eau ou d'une rénovation complète, est traité avec la même rigueur.
-        </p>
-        <p class="text-ink-500 text-base leading-relaxed mb-8">
-          Nos valeurs ? Un engagement qualité sans compromis, des devis transparents, et la volonté de bâtir des relations durables avec nos clients. Voilà ce qui fait BSO Bâtiment.
-        </p>
-        <a href="contact.html" class="btn-primary">Nous contacter<i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-      </div>
-
+<section class="certs">
+  <div class="container">
+    <div class="s-head reveal" style="margin-bottom:48px;">
+      <span class="eyebrow">Certifications &amp; garanties</span>
+      <h2 style="font-size:36px;">Certifiés pour vous <em>protéger</em></h2>
+    </div>
+    <div class="certs-grid">
+      <div class="cert reveal d-1"><div class="cert-icon" id="ic-ct1"></div><div class="cert-name">Décennale</div><div class="cert-sub">10 ans</div></div>
+      <div class="cert reveal d-2"><div class="cert-icon" id="ic-ct2"></div><div class="cert-name">RGE Qualibat</div><div class="cert-sub">Certifié</div></div>
+      <div class="cert reveal d-3"><div class="cert-icon" id="ic-ct3"></div><div class="cert-name">MaPrimeRénov'</div><div class="cert-sub">Éligible</div></div>
+      <div class="cert reveal d-4"><div class="cert-icon" id="ic-ct4"></div><div class="cert-name">CEE</div><div class="cert-sub">Partenaire</div></div>
+      <div class="cert reveal d-5"><div class="cert-icon" id="ic-ct5"></div><div class="cert-name">Assurance pro</div><div class="cert-sub">Resp. civile</div></div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════
-     NOS VALEURS
-════════════════════════════════════════════════════════════ -->
-<section class="py-20 lg:py-28 bg-ink-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-14 reveal">
-      <div class="section-label justify-center"><span></span>Nos valeurs</div>
-      <h2 class="font-heading font-bold text-ink-900 text-3xl sm:text-4xl lg:text-5xl mb-4">Ce qui guide chacune<br class="hidden sm:block" /> de nos <span class="text-brand-600">interventions</span></h2>
-      <p class="text-ink-500 max-w-2xl mx-auto text-base">
-        Quatre piliers qui définissent notre façon de travailler et de servir nos clients dans le Vaucluse.
-      </p>
+<footer class="bso-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/logo-bso.png" alt="BSO Bâtiment" class="footer-logo" />
+        <p>Artisan bâtisseur dans le Vaucluse depuis 2018. Maçonnerie, isolation thermique extérieure et rénovation complète, avec sérieux et finition soignée.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5V12h3.642l.358-4H14V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z"/></svg></a>
+          <a href="#" class="footer-social" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.849.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.849.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          <a href="#" class="footer-social" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Métiers</h5><ul><li><a href="maconnerie.html">Maçonnerie</a></li><li><a href="isolation-thermique.html">ITE</a></li><li><a href="renovation.html">Rénovation</a></li></ul></div>
+      <div class="footer-col"><h5>L'entreprise</h5><ul><li><a href="a-propos.html">À propos</a></li><li><a href="index.html#realizations">Réalisations</a></li><li><a href="index.html#testimonials">Avis clients</a></li><li><a href="index.html#zone">Zone d'intervention</a></li><li><a href="index.html#faq">FAQ</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><ul><li><a href="tel:0773292452">07 73 29 24 52</a></li><li><a href="mailto:bso.construction@gmx.com">bso.construction@gmx.com</a></li><li>Vaucluse (84)</li><li>Lun-Ven : 8h-18h</li></ul></div>
     </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <article class="service-card reveal stagger-1 p-6">
-        <div class="w-12 h-12 bg-brand-50 rounded-lg flex items-center justify-center mb-5">
-          <i data-lucide="map-pin" class="w-6 h-6 text-brand-600"></i>
-        </div>
-        <h3 class="font-heading font-semibold text-xl text-ink-900 mb-3">Proximité</h3>
-        <p class="text-ink-500 text-sm leading-relaxed">Ancrés dans le Vaucluse, nous connaissons votre territoire et intervenons rapidement partout dans le département, de Avignon à Orange.</p>
-      </article>
-
-      <article class="service-card reveal stagger-2 p-6">
-        <div class="w-12 h-12 bg-brand-50 rounded-lg flex items-center justify-center mb-5">
-          <i data-lucide="eye" class="w-6 h-6 text-brand-600"></i>
-        </div>
-        <h3 class="font-heading font-semibold text-xl text-ink-900 mb-3">Transparence</h3>
-        <p class="text-ink-500 text-sm leading-relaxed">Devis clairs, tarifs annoncés avant toute intervention, aucun frais caché. Vous savez exactement ce que vous payez, et pourquoi.</p>
-      </article>
-
-      <article class="service-card reveal stagger-3 p-6">
-        <div class="w-12 h-12 bg-brand-50 rounded-lg flex items-center justify-center mb-5">
-          <i data-lucide="zap" class="w-6 h-6 text-brand-600"></i>
-        </div>
-        <h3 class="font-heading font-semibold text-xl text-ink-900 mb-3">Réactivité</h3>
-        <p class="text-ink-500 text-sm leading-relaxed">Disponibles 24h/24 et 7j/7, nous répondons vite aux urgences pour limiter les dégâts et restaurer votre confort sans délai.</p>
-      </article>
-
-      <article class="service-card reveal stagger-4 p-6">
-        <div class="w-12 h-12 bg-brand-50 rounded-lg flex items-center justify-center mb-5">
-          <i data-lucide="badge-check" class="w-6 h-6 text-brand-600"></i>
-        </div>
-        <h3 class="font-heading font-semibold text-xl text-ink-900 mb-3">Qualité durable</h3>
-        <p class="text-ink-500 text-sm leading-relaxed">Matériel professionnel, pièces conformes aux normes et travail soigné — pour des installations qui tiennent dans le temps.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════
-     NOS 4 MÉTIERS
-════════════════════════════════════════════════════════════ -->
-<section class="py-20 lg:py-28 bg-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-14 reveal">
-      <div class="section-label justify-center"><span></span>Nos 4 métiers</div>
-      <h2 class="font-heading font-bold text-ink-900 text-3xl sm:text-4xl lg:text-5xl mb-4">Quatre expertises,<br class="hidden sm:block" /> <span class="text-brand-600">un seul interlocuteur</span></h2>
-    </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <article class="service-card reveal stagger-1">
-        <div class="relative overflow-hidden h-52">
-          <img src="assets/img/plomberie-installation.jpeg" alt="Maçonnerie" class="service-img w-full h-full object-cover" />
-          <div class="absolute top-4 left-4 w-12 h-12 bg-brand-600 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white">
-            <i data-lucide="hammer" class="w-5 h-5 text-white"></i>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="font-heading font-semibold text-xl text-ink-900 mb-3">Maçonnerie générale</h3>
-          <p class="text-ink-500 text-sm leading-relaxed mb-5">Gros œuvre, extensions, ouvertures, dallages — exécutés selon les règles de l'art et garantis décennale.</p>
-          <a href="maconnerie.html" class="btn-ghost">Découvrir <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-        </div>
-      </article>
-
-      <article class="service-card reveal stagger-2">
-        <div class="relative overflow-hidden h-52">
-          <img src="assets/img/electricite-tablette-outils.jpg" alt="Isolation thermique extérieure" class="service-img w-full h-full object-cover" />
-          <div class="absolute top-4 left-4 w-12 h-12 bg-brand-600 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white">
-            <i data-lucide="layers" class="w-5 h-5 text-white"></i>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="font-heading font-semibold text-xl text-ink-900 mb-3">Isolation thermique extérieure</h3>
-          <p class="text-ink-500 text-sm leading-relaxed mb-5">Pose ITE certifiée RGE Qualibat — finition enduit ou bardage. Éligible MaPrimeRénov' et CEE.</p>
-          <a href="isolation-thermique.html" class="btn-ghost">Découvrir <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-        </div>
-      </article>
-
-      <article class="service-card reveal stagger-3">
-        <div class="relative overflow-hidden h-52">
-          <img src="assets/img/renovation-sdb.jpeg" alt="Rénovation complète" class="service-img w-full h-full object-cover" />
-          <div class="absolute top-4 left-4 w-12 h-12 bg-brand-600 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white">
-            <i data-lucide="home" class="w-5 h-5 text-white"></i>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="font-heading font-semibold text-xl text-ink-900 mb-3">Rénovation complète</h3>
-          <p class="text-ink-500 text-sm leading-relaxed mb-5">Cuisine, salle de bain, sols, ouvertures — un seul interlocuteur pour orchestrer tout votre projet.</p>
-          <a href="renovation.html" class="btn-ghost">Découvrir <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════
-     STATS
-════════════════════════════════════════════════════════════ -->
-<section class="relative py-20 lg:py-28 overflow-hidden bg-ink-900">
-  <div class="absolute inset-0 opacity-15">
-    <img src="assets/img/artisan-camionnette.jpeg" alt="" class="w-full h-full object-cover" />
-  </div>
-  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-6 text-center">
-      <div class="reveal">
-        <div class="stat-number"><span class="counter" data-target="2000" data-format="true" data-suffix="+">0+</span></div>
-        <div class="text-white/70 text-sm tracking-widest uppercase mt-3">Interventions</div>
-      </div>
-      <div class="reveal stagger-1">
-        <div class="stat-number"><span class="counter" data-target="30" data-suffix="+">0+</span></div>
-        <div class="text-white/70 text-sm tracking-widest uppercase mt-3">Ans d'expérience</div>
-      </div>
-      <div class="reveal stagger-2">
-        <div class="stat-number"><span class="counter" data-target="100" data-suffix="%">0%</span></div>
-        <div class="text-white/70 text-sm tracking-widest uppercase mt-3">Satisfaction</div>
-      </div>
-      <div class="reveal stagger-3">
-        <div class="stat-number"><span class="counter" data-target="4" data-suffix="">0</span></div>
-        <div class="text-white/70 text-sm tracking-widest uppercase mt-3">Corps de métiers</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════
-     ENGAGEMENTS
-════════════════════════════════════════════════════════════ -->
-<section class="py-20 lg:py-28 bg-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-      <div class="reveal-left lg:sticky lg:top-28">
-        <div class="section-label"><span></span>Engagements</div>
-        <h2 class="font-heading font-bold text-ink-900 text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-          Nos engagements<br />
-          <span class="text-brand-600">envers vous</span>
-        </h2>
-        <p class="text-ink-500 text-base leading-relaxed">
-          Cinq engagements concrets que nous tenons sur chaque chantier, des fondations aux finitions.
-        </p>
-      </div>
-
-      <div class="reveal-right">
-        <ul class="space-y-6">
-          <li class="flex items-start gap-4">
-            <div class="flex-shrink-0 w-12 h-12 bg-brand-50 rounded-lg flex items-center justify-center">
-              <i data-lucide="badge-check" class="w-6 h-6 text-brand-600"></i>
-            </div>
-            <div>
-              <h4 class="font-heading font-semibold text-ink-900 text-lg mb-1">Qualité certifiée</h4>
-              <p class="text-ink-500 text-sm leading-relaxed">Artisans qualifiés, matériel professionnel et pièces conformes à la réglementation en vigueur.</p>
-            </div>
-          </li>
-          <li class="flex items-start gap-4">
-            <div class="flex-shrink-0 w-12 h-12 bg-brand-50 rounded-lg flex items-center justify-center">
-              <i data-lucide="shield-check" class="w-6 h-6 text-brand-600"></i>
-            </div>
-            <div>
-              <h4 class="font-heading font-semibold text-ink-900 text-lg mb-1">Garantie décennale</h4>
-              <p class="text-ink-500 text-sm leading-relaxed">Assurance professionnelle et garanties incluses sur les pièces et la main-d'œuvre.</p>
-            </div>
-          </li>
-          <li class="flex items-start gap-4">
-            <div class="flex-shrink-0 w-12 h-12 bg-brand-50 rounded-lg flex items-center justify-center">
-              <i data-lucide="timer" class="w-6 h-6 text-brand-600"></i>
-            </div>
-            <div>
-              <h4 class="font-heading font-semibold text-ink-900 text-lg mb-1">Intervention rapide</h4>
-              <p class="text-ink-500 text-sm leading-relaxed">Urgences prises en charge 24h/24 avec un délai moyen d'intervention inférieur à une heure en zone prioritaire.</p>
-            </div>
-          </li>
-          <li class="flex items-start gap-4">
-            <div class="flex-shrink-0 w-12 h-12 bg-brand-50 rounded-lg flex items-center justify-center">
-              <i data-lucide="file-check" class="w-6 h-6 text-brand-600"></i>
-            </div>
-            <div>
-              <h4 class="font-heading font-semibold text-ink-900 text-lg mb-1">Devis transparent</h4>
-              <p class="text-ink-500 text-sm leading-relaxed">Tarifs clairs et communiqués avant le démarrage. Aucun frais caché, aucune surprise en fin de chantier.</p>
-            </div>
-          </li>
-          <li class="flex items-start gap-4">
-            <div class="flex-shrink-0 w-12 h-12 bg-brand-50 rounded-lg flex items-center justify-center">
-              <i data-lucide="headphones" class="w-6 h-6 text-brand-600"></i>
-            </div>
-            <div>
-              <h4 class="font-heading font-semibold text-ink-900 text-lg mb-1">Suivi client</h4>
-              <p class="text-ink-500 text-sm leading-relaxed">Un interlocuteur dédié pour vos questions, avant, pendant et après l'intervention.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════
-     CTA FINAL
-════════════════════════════════════════════════════════════ -->
-<section class="bg-brand-600 py-20 lg:py-24">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl mb-5 reveal">
-      Prêt à nous confier<br class="hidden sm:block" /> votre projet ?
-    </h2>
-    <p class="text-white/85 max-w-2xl mx-auto text-base leading-relaxed mb-8 reveal stagger-1">
-      Appelez-nous maintenant pour une intervention rapide dans toute le Vaucluse. Devis gratuit et transparent, 24h/24 et 7j/7.
-    </p>
-    <div class="reveal stagger-2">
-      <a href="tel:0773292452" class="inline-flex items-center justify-center gap-2 bg-white text-brand-600 px-8 py-4 rounded-full font-bold text-sm uppercase tracking-wider hover:bg-ink-900 hover:text-white transition-all shadow-xl">
-        <i data-lucide="phone" class="w-4 h-4"></i>
-        07 73 29 24 52
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════
-     FOOTER
-════════════════════════════════════════════════════════════ -->
-<footer class="bg-ink-900 text-white pt-16 pb-8">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
-
-      <div class="lg:col-span-2">
-        <div class="flex items-center gap-3 mb-4">
-          <svg viewBox="0 0 100 100" class="h-10 w-auto flex-shrink-0" xmlns="http://www.w3.org/2000/svg" aria-label="BSO Bâtiment">
-          <!-- 3 wedges : navy + orange terre -->
-          <path d="M50,50 L50,2 A48,48 0 0,1 91.57,74 Z" fill="#0a1f44"/>
-          <path d="M50,50 L91.57,74 A48,48 0 0,1 8.43,74 Z" fill="#d97706"/>
-          <path d="M50,50 L8.43,74 A48,48 0 0,1 50,2 Z" fill="#1a2d5a"/>
-          <!-- BTP icons in white (hammer / layers / home) -->
-          <g fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <g transform="translate(38 14)"><path d="M15 12l-8.5 8.5a2.12 2.12 0 1 1-3-3L12 9"/><path d="M17.64 15 22 10.64"/><path d="m20.91 11.7-1.25-1.25a2.5 2.5 0 0 1 0-3.54l1.6-1.6a2.5 2.5 0 0 1 3.54 0l1.25 1.25"/></g>
-            <g transform="translate(54 56)"><path d="M5 3 2 8l3 5h14l3-5-3-5H5z"/><path d="M2 13l3 5h14l3-5"/></g>
-            <g transform="translate(20 56)"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></g>
-          </g>
-        </svg>
-          <span class="font-kanit font-bold text-xl text-white tracking-tight">BSO <span class="text-brand-500">Bâtiment</span></span>
-        </div>
-        <p class="text-white/60 text-sm leading-relaxed max-w-md mb-6">
-          Principales communes couvertes : Avignon, Carpentras, Orange, Cavaillon, L'Isle-sur-la-Sorgue, Pertuis, Apt, Sorgues, Le Pontet, Vedène, Monteux, Vaison-la-Romaine.
-        </p>
-        <div class="flex flex-wrap gap-2">
-          <a href="#" aria-label="Facebook" title="Facebook" class="w-9 h-9 bg-white/10 hover:bg-brand-600 rounded-lg flex items-center justify-center transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
-          </a>
-          <a href="#" aria-label="Instagram" title="Instagram" class="w-9 h-9 bg-white/10 hover:bg-brand-600 rounded-lg flex items-center justify-center transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-          </a>
-          <a href="#" aria-label="LinkedIn" title="LinkedIn" class="w-9 h-9 bg-white/10 hover:bg-brand-600 rounded-lg flex items-center justify-center transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.063 2.063 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-          <a href="#" aria-label="YouTube" title="YouTube" class="w-9 h-9 bg-white/10 hover:bg-brand-600 rounded-lg flex items-center justify-center transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-          </a>
-          <a href="#" aria-label="TikTok" title="TikTok" class="w-9 h-9 bg-white/10 hover:bg-brand-600 rounded-lg flex items-center justify-center transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M19.321 5.562a5.122 5.122 0 0 1-3.414-1.267 5.121 5.121 0 0 1-1.537-2.898h-3.243v13.672a2.737 2.737 0 0 1-2.735 2.736 2.737 2.737 0 0 1-2.736-2.736 2.737 2.737 0 0 1 2.736-2.735c.284 0 .558.044.816.124v-3.298a5.998 5.998 0 0 0-.816-.057 6.034 6.034 0 0 0-6.033 6.033 6.034 6.034 0 0 0 6.033 6.033 6.034 6.034 0 0 0 6.033-6.033V9.146a8.347 8.347 0 0 0 4.896 1.576V7.48a4.87 4.87 0 0 1-.004-1.918z"/></svg>
-          </a>
-          <a href="#" aria-label="X" title="X (Twitter)" class="w-9 h-9 bg-white/10 hover:bg-brand-600 rounded-lg flex items-center justify-center transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </a>
-          <a href="https://wa.me/33773292452" aria-label="WhatsApp" title="WhatsApp" class="w-9 h-9 bg-white/10 hover:bg-brand-600 rounded-lg flex items-center justify-center transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-          </a>
-          <a href="#" aria-label="Google Business" title="Google Business" class="w-9 h-9 bg-white/10 hover:bg-brand-600 rounded-lg flex items-center justify-center transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12.24 10.285V14.4h6.806c-.275 1.765-2.056 5.174-6.806 5.174-4.095 0-7.439-3.389-7.439-7.574s3.345-7.574 7.439-7.574c2.33 0 3.891.989 4.785 1.849l3.254-3.138C18.189 1.186 15.479 0 12.24 0 5.48 0 0 5.48 0 12.24s5.48 12.24 12.24 12.24c7.065 0 11.76-4.965 11.76-11.955 0-.8-.085-1.42-.19-2.04z"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <div>
-        <h4 class="font-heading font-semibold text-sm uppercase tracking-widest mb-4">Contact</h4>
-        <ul class="space-y-3 text-sm text-white/70">
-          <li class="flex items-start gap-2">
-            <i data-lucide="map-pin" class="w-4 h-4 text-brand-500 mt-0.5"></i>
-            <span>Vaucluse (84)<br />Provence-Alpes-Côte d'Azur</span>
-          </li>
-          <li class="flex items-center gap-2">
-            <i data-lucide="phone" class="w-4 h-4 text-brand-500"></i>
-            <a href="tel:0773292452" class="hover:text-white">07 73 29 24 52</a>
-          </li>
-          <li class="flex items-center gap-2">
-            <i data-lucide="mail" class="w-4 h-4 text-brand-500"></i>
-            <a href="mailto:bso.construction@gmx.com" class="hover:text-white break-all">bso.construction@gmx.com</a>
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="font-heading font-semibold text-sm uppercase tracking-widest mb-4">Nos services</h4>
-        <ul class="space-y-2.5 text-sm text-white/70">
-          <li><a href="isolation-thermique.html" class="hover:text-brand-500">Isolation Thermique</a></li>
-          <li><a href="renovation.html" class="hover:text-brand-500">Rénovation</a></li>
-          <li><a href="maconnerie.html" class="hover:text-brand-500">Maçonnerie</a></li>
-          <li><a href="a-propos.html" class="hover:text-brand-500">À propos</a></li>
-          <li><a href="contact.html" class="hover:text-brand-500">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-      <p class="text-white/40 text-xs">© 2025 BSO Bâtiment — Tous droits réservés.</p>
-      <a href="mentions-legales.html" class="text-white/40 hover:text-white text-xs">Mentions légales</a>
+    <div class="footer-bottom">
+      <div>© 2026 BSO Bâtiment · RGE Qualibat · Décennale</div>
+      <div style="display:flex; gap:24px;"><a href="mentions-legales.html">Mentions légales</a><a href="mentions-legales.html#rgpd">Politique RGPD</a></div>
     </div>
   </div>
 </footer>
 
-<!-- ═══════════════════════════════════════════════════════════
-     FLOATING MOBILE CTA
-════════════════════════════════════════════════════════════ -->
-<div id="floating-cta" class="fixed bottom-6 right-6 z-50 lg:hidden opacity-0 translate-y-4 transition-all duration-500">
-  <a href="tel:0773292452" class="flex items-center justify-center w-14 h-14 bg-brand-600 text-white rounded-full float-cta">
-    <i data-lucide="phone" class="w-6 h-6"></i>
-  </a>
-</div>
+<a href="tel:0773292452" class="tel-float" aria-label="Appelez-nous"><span id="ic-ftel"></span></a>
 
-<!-- ═══════════════════════════════════════════════════════════
-     JS
-════════════════════════════════════════════════════════════ -->
-<script>
-  if (typeof lucide !== 'undefined') lucide.createIcons();
-
-  const navbar = document.getElementById('navbar');
-  window.addEventListener('scroll', function () {
-    navbar.classList.toggle('scrolled', window.scrollY > 40);
-  });
-
-  const burgerBtn = document.getElementById('burger-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-  const burgerIcon = document.getElementById('burger-icon');
-  const closeIcon = document.getElementById('close-icon');
-  burgerBtn.addEventListener('click', function () {
-    const isOpen = !mobileMenu.classList.contains('hidden');
-    mobileMenu.classList.toggle('hidden');
-    if (isOpen) { burgerIcon.classList.remove('hidden'); closeIcon.classList.add('hidden'); }
-    else { burgerIcon.classList.add('hidden'); closeIcon.classList.remove('hidden'); }
-  });
-
-  const ms = document.getElementById('mobile-services-btn');
-  const msMenu = document.getElementById('mobile-services-menu');
-  const msChev = document.getElementById('mobile-services-chevron');
-  if (ms) ms.addEventListener('click', function () {
-    msMenu.classList.toggle('hidden');
-    msChev.style.transform = msMenu.classList.contains('hidden') ? '' : 'rotate(180deg)';
-  });
-
-  const io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
-      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
-    });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-  document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(function (el) { io.observe(el); });
-
-  const cio = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        const el = entry.target;
-        const target = parseInt(el.dataset.target);
-        const suffix = el.dataset.suffix || '';
-        const format = el.dataset.format === 'true';
-        const duration = target > 500 ? 2200 : 1800;
-        const start = performance.now();
-        function animate(now) {
-          const p = Math.min((now - start) / duration, 1);
-          const eased = 1 - Math.pow(1 - p, 4);
-          const cur = Math.round(eased * target);
-          el.textContent = format ? cur.toLocaleString('fr-FR') + suffix : cur + suffix;
-          if (p < 1) requestAnimationFrame(animate);
-        }
-        requestAnimationFrame(animate);
-        cio.unobserve(el);
-      }
-    });
-  }, { threshold: 0.5 });
-  document.querySelectorAll('.counter').forEach(function (el) { cio.observe(el); });
-
-  const fcta = document.getElementById('floating-cta');
-  window.addEventListener('scroll', function () {
-    if (window.scrollY > 500) {
-      fcta.style.opacity = '1';
-      fcta.style.transform = 'translateY(0)';
-    } else {
-      fcta.style.opacity = '0';
-      fcta.style.transform = 'translateY(16px)';
-    }
-  });
-</script>
-
-
-<!-- Premium motion pack: Lenis + GSAP + ScrollTrigger -->
-<script src='https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js'></script>
-<script defer src='assets/js/premium-motion.js'></script>
+<script src="assets/js/bso-app.js"></script>
 </body>
 </html>
