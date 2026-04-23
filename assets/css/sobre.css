@@ -303,7 +303,9 @@ footer.bso-footer { background: var(--ink); color: rgba(255,255,255,0.7); paddin
 /* Responsive */
 @media (max-width: 1024px) {
   .nav-menu { display: none; }
+  .nav-cta { display: none; }
   .nav-burger { display: block; }
+  .nav.scrolled { background: var(--cream-soft); backdrop-filter: none; }
   .hero-grid, .about-grid, .zone-grid, .cta-grid, .page-hero-inner, .svc-grid { grid-template-columns: 1fr; gap: 60px; }
   .services-grid, .testi-grid { grid-template-columns: 1fr 1fr; }
   .process-grid { grid-template-columns: 1fr 1fr; }
