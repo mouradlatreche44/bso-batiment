@@ -65,4 +65,29 @@
     if (drawerClose) drawerClose.addEventListener('click', () => drawer.classList.remove('open'));
     drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => drawer.classList.remove('open')));
   }
+
+  /* Avant / Après slider */
+  const baSlider = document.getElementById('baSlider');
+  if (baSlider) {
+    const handle = baSlider.querySelector('.ba-handle');
+    let dragging = false;
+    const setPos = (clientX) => {
+      const r = baSlider.getBoundingClientRect();
+      const pct = Math.max(0, Math.min(100, ((clientX - r.left) / r.width) * 100));
+      baSlider.style.setProperty('--pos', pct + '%');
+      if (handle) handle.setAttribute('aria-valuenow', Math.round(pct));
+    };
+    baSlider.addEventListener('pointerdown', (e) => { dragging = true; baSlider.setPointerCapture(e.pointerId); setPos(e.clientX); });
+    baSlider.addEventListener('pointermove', (e) => { if (dragging) setPos(e.clientX); });
+    baSlider.addEventListener('pointerup', (e) => { dragging = false; try { baSlider.releasePointerCapture(e.pointerId); } catch(_){} });
+    baSlider.addEventListener('pointercancel', () => { dragging = false; });
+    if (handle) {
+      handle.addEventListener('keydown', (e) => {
+        const cs = getComputedStyle(baSlider).getPropertyValue('--pos');
+        const cur = parseFloat(cs) || 50;
+        if (e.key === 'ArrowLeft') { baSlider.style.setProperty('--pos', Math.max(0, cur - 5) + '%'); handle.setAttribute('aria-valuenow', Math.round(Math.max(0, cur - 5))); e.preventDefault(); }
+        if (e.key === 'ArrowRight') { baSlider.style.setProperty('--pos', Math.min(100, cur + 5) + '%'); handle.setAttribute('aria-valuenow', Math.round(Math.min(100, cur + 5))); e.preventDefault(); }
+      });
+    }
+  }
 })();

@@ -28,9 +28,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/bso.css?v=1776935718281" />
-<link rel="stylesheet" href="assets/css/sobre.css?v=1776935718281" />
-<script src="assets/js/icons.js?v=1776935718281"></script>
+<link rel="stylesheet" href="assets/css/bso.css?v=1776936338842" />
+<link rel="stylesheet" href="assets/css/sobre.css?v=1776936338842" />
+<script src="assets/js/icons.js?v=1776936338842"></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -143,7 +143,15 @@
         <a href="tel:0773292452" class="btn btn-outline"><span id="ic-ph3"></span> 07 73 29 24 52</a>
       </div>
     </div>
-    <div class="page-hero-img reveal-scale d-1"><img src="assets/img/hero-renovation.jpg" alt="Rénovation complète — BSO Bâtiment" /></div>
+    <div class="page-hero-img reveal-scale d-1">
+      <div class="ba-slider" id="baSlider" aria-label="Comparateur avant/après — rénovation cuisine mas provençal">
+        <img class="ba-img ba-after" src="assets/img/hero-renovation-apres.jpg" alt="Cuisine rénovée par BSO Bâtiment — APRÈS travaux" loading="eager" />
+        <img class="ba-img ba-before" src="assets/img/hero-renovation-avant.jpg" alt="Cuisine d'origine — AVANT travaux" loading="eager" />
+        <span class="ba-label ba-label-left">Avant</span>
+        <span class="ba-label ba-label-right">Après</span>
+        <button type="button" class="ba-handle" aria-label="Glisser pour comparer avant et après" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" role="slider"></button>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -235,6 +243,6 @@
 
 <a href="tel:0773292452" class="tel-float" aria-label="Appelez-nous"><span id="ic-ftel"></span></a>
 
-<script src="assets/js/bso-app.js?v=1776935718281"></script>
+<script src="assets/js/bso-app.js?v=1776936338842"></script>
 </body>
 </html>
