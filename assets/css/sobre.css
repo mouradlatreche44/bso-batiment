@@ -331,12 +331,14 @@ footer.bso-footer { background: var(--ink); color: rgba(255,255,255,0.7); paddin
   .realization:nth-child(1) { grid-column: span 1; }
   .form-row { grid-template-columns: 1fr; }
   .container { padding: 0 20px; }
-  .topbar { padding: 8px 0; font-size: 10px; letter-spacing: 0.05em; }
+  .topbar { padding: 8px 0; font-size: 10px; letter-spacing: 0.05em; position: sticky; top: 0; z-index: 51; background: var(--cream-soft); }
   .topbar-inner { justify-content: center; gap: 12px; flex-wrap: nowrap; }
   .topbar-inner > .topbar-item:first-child { display: none; }
   .topbar-inner > div { gap: 14px !important; flex-wrap: nowrap; }
   .topbar-item { gap: 5px; white-space: nowrap; }
   .topbar-item svg { width: 12px; height: 12px; flex-shrink: 0; }
+  .nav { top: 32px; background: var(--cream-soft) !important; box-shadow: 0 2px 12px rgba(44,62,84,0.08); }
+  .nav-burger { background: var(--cream); border-radius: 8px; }
   .nav-inner { height: 70px; }
   .nav-logo img { height: 64px; max-width: 200px; }
   .s-head { margin-bottom: 60px; }
