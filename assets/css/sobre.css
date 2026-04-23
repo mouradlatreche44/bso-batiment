@@ -332,14 +332,14 @@ footer.bso-footer { background: var(--ink); color: rgba(255,255,255,0.7); paddin
   .form-row { grid-template-columns: 1fr; }
   .container { padding: 0 20px; }
   html, body { overflow-x: hidden; max-width: 100vw; }
-  body { padding-top: 34px; }
+  body { padding-top: 104px; }
   .topbar { padding: 8px 0; font-size: 10px; letter-spacing: 0.05em; position: fixed; top: 0; left: 0; right: 0; z-index: 60; background: var(--cream-soft); border-bottom: 1px solid var(--line); }
   .topbar-inner { justify-content: center; gap: 12px; flex-wrap: nowrap; padding: 0 16px; }
   .topbar-inner > .topbar-item:first-child { display: none; }
   .topbar-inner > div { gap: 14px !important; flex-wrap: nowrap; }
   .topbar-item { gap: 5px; white-space: nowrap; }
   .topbar-item svg { width: 12px; height: 12px; flex-shrink: 0; }
-  .nav { position: sticky; top: 34px; background: var(--cream-soft) !important; box-shadow: 0 2px 12px rgba(44,62,84,0.08); z-index: 50; }
+  .nav { position: fixed; top: 34px; left: 0; right: 0; background: var(--cream-soft) !important; box-shadow: 0 2px 12px rgba(44,62,84,0.08); z-index: 50; }
   .nav-burger { background: var(--cream); border-radius: 8px; }
   .mobile-drawer { padding-top: 50px; }
   .nav-inner { height: 70px; }
